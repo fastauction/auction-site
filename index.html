@@ -7,49 +7,62 @@
     <title>test</title>
     <meta name="description" content="Auction Test Site">
     <meta name="author" content="Harry McKinney">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/make-me-responsive.css">
-
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <link rel="icon" type="image/png" href="images/favicon.png">
 
     <style>
-        body{
-          background-color:#999;
+        body {
+            background-color: #999;
         }
-        .container{
-          background-color:#DCDCDC;
-          margin-top:10px;
+        .container {
+            background-color: #DCDCDC;
+            margin-top: 10px;
         }
-        div{
-          border:1px solid #000;
-          height:150px;
+        div {
+            border: 1px solid #000;
+            height: 150px;
         }
-      </style>
-      </head>
-      
-      <body>
-        <div class="container">
-          <div class="row">
-            <div class="u-full-width">
-          
-            </div>
-          </div>
-          
-          <hr>
+        #draggable { width: 150px; height: 150px; padding: 0.5em; background-color:#F0FFFF; }
+    </style>
 
-<div class="row">
-   <div class="u-full-width">
-      <div class="copyright" style="margin:0 auto; height:150px; width:520px; text-align:center;">Copyright &copy; 1999 - <script>document.write(new Date().getFullYear())</script> Company Name, site &Delta; 's by: Harry </div>
-   </div>
-</div>
-        </div><!-- end container div-->
-        
-        
-        
-      </body>
+    <script>
+  $(function() {
+    $( "#draggable" ).draggable();
+  });
+  </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="u-full-width">
+                <div class="four columns"></div>
+                  <div class="three columns"></div>
+                    <div class="five columns">
+                        <div id="draggable" class="ui-widget-content"></div>
+                    </div>
+                  </div>
+                </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="u-full-width">
+                <div class="copyright" style="margin:0 auto; height:150px; width:520px; text-align:center;">Copyright &copy; 1999 -
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> Company Name, site &Delta; 's by: Harry </div>
+            </div>
+        </div>
+    </div>
+    <!-- end container div-->
+
+</body>
 </html>
