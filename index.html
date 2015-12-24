@@ -15,6 +15,15 @@
     <script>
      console.info("welcome to my Auction Trader live auction website :)");
     </script>
+
+    <script>
+    $(document).ready(function () {
+  var bitcoinPrice = ("https://blockchain.info/q/24hrprice");
+  $.getJSON(bitcoinPrice, function (cost){
+    console.info('1 bitcoin = $',cost);
+  });
+});
+    </script>
 </head>
 
 <body>
