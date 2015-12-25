@@ -22,7 +22,7 @@
   var getVehicleInventory = ("./data/data.json");
   $.getJSON(getVehicleInventory, function (allInventory){
     console.info('current CSV :',allInventory);
-    console.log(allInventory.Object[1]FIELD5);
+    console.log(allInventory[1].FIELD5);
   });
 });
     </script>
