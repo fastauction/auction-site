@@ -23,6 +23,9 @@
   $.getJSON(getVehicleInventory, function (allInventory){
     console.info('current CSV :',allInventory);
     console.log(allInventory[1].FIELD5);
+
+    $(".hx1").append("<span>" +allInventory[1].FIELD5+ "</span>" "<span>" +allInventory[1].FIELD6+ "</span>");
+
   });
 });
     </script>
@@ -49,7 +52,7 @@
     <div class="large-3 medium-4 small-6 columns">
     <img src="http://placehold.it/400x400&amp;text=400x400">
     <div class="panel">
-    <h5 style="text-align:center;">Item Name</h5>
+    <h5 class="hx1" style="text-align:center;">Item Name</h5>
     <h6 class="subheader">Current Price: $000.00</h6>
     <a href="#">
         <div class="medium success button" style="text-align: center">
