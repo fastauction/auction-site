@@ -22,6 +22,7 @@ $(document).ready(function () {
   var getVehicleInventory = ("./data/data.json");
   $.getJSON(getVehicleInventory, function (allInventory){
     $(".hx1").append("<span>" +allInventory[1].FIELD4+ " " +allInventory[1].FIELD5+ " " +allInventory[1].FIELD6+ "</span>");
+    $(".hx2").append("<span>" +allInventory[1].FIELD53+ "</span");
     console.info('current CSV :',allInventory);
     console.log(allInventory[1].FIELD5);
   });
@@ -51,7 +52,7 @@ $(document).ready(function () {
     <img src="http://placehold.it/400x400&amp;text=400x400">
     <div class="panel">
     <h5 class="hx1" style="text-align:center;"></h5>
-    <h6 class="subheader">Current Price: $000.00</h6>
+    <h6 class="subheader">Current Price: $<div class="hx2">000</div></h6>
     <a href="#">
         <div class="medium success button" style="text-align: center">
             <strong>Bid Now</strong>
