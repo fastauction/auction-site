@@ -21,7 +21,7 @@
 $(document).ready(function () {
   var getVehicleInventory = ("./data/data.json");
   $.getJSON(getVehicleInventory, function (allInventory){
-    $(".hx1").append("<span>" +allInventory[1].FIELD5+ " " +allInventory[1].FIELD6+ "</span>");
+    $(".hx1").append("<span>" +allInventory[1].FIELD4+ " " +allInventory[1].FIELD5+ " " +allInventory[1].FIELD6+ "</span>");
     console.info('current CSV :',allInventory);
     console.log(allInventory[1].FIELD5);
   });
