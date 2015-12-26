@@ -18,14 +18,12 @@
     </script>
 
     <script>
-    $(document).ready(function () {
+$(document).ready(function () {
   var getVehicleInventory = ("./data/data.json");
   $.getJSON(getVehicleInventory, function (allInventory){
+    $(".hx1").append("<span>" +allInventory[1].FIELD5+ "</span>" "<span>" +allInventory[1].FIELD6+ "</span>");
     console.info('current CSV :',allInventory);
     console.log(allInventory[1].FIELD5);
-
-    $(".hx1").append("<span>" +allInventory[1].FIELD5+ "</span>" "<span>" +allInventory[1].FIELD6+ "</span>");
-
   });
 });
     </script>
