@@ -46,6 +46,14 @@ $(document).ready(function () {
       });
     });
     </script>
+    
+    <script>
+    $(document).ready(function(){
+    $( ".close-window" ).click(function() {
+      $( ".more-info" ).hide("slow");
+      });
+    });
+    </script>
 
     <style>
 .hx1-info:hover{
@@ -100,7 +108,7 @@ $(document).ready(function () {
 
       <div class="hx1-info">
         <div class="panel radius callout" style="text-align: center">
-            <span class="hx1-info">more info</span>
+            <span>more info</span>
         </div>
       </div>
 
@@ -114,6 +122,7 @@ $(document).ready(function () {
         <div class="mi-6">6</div>
         <div class="mi-7">7</div>
         <div class="mi-8">8</div>
+
         <div class="close-window" style="text-align:right;"><small>(less)</less></div>
 
       </div><!--end of more-info div-->
