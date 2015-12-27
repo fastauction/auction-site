@@ -29,8 +29,8 @@ $(document).ready(function () {
     $(".mi-4").append("<span>" +allInventory[1].FIELD11+ "</span>");
     $(".mi-5").append("<span>" +allInventory[1].FIELD14+ "</span>");
     $(".mi-6").append("<span>" +allInventory[1].FIELD15+ "</span>");
-    $(".mi-7").append("<span>" +allInventory[1].FIELD18+ "</span>");
-    $(".mi-8").append("<span> City: " +allInventory[1].FIELD49+ "/ Hwy: " +allInventory[1].FIELD50+ "</span>");
+    $(".mi-7").append("<span>" +(commaSeparateNumber(allInventory[1].FIELD18))+ "</span>");
+    $(".mi-8").append("<span> City: " +allInventory[1].FIELD49+ " / Hwy: " +allInventory[1].FIELD50+ "</span>");
     $(".mi-9").append("<span>" +allInventory[1].FIELD30+ "</span>");
     console.info('current CSV :',allInventory);
     console.log(allInventory[1].FIELD5);
@@ -121,7 +121,7 @@ $(document).ready(function () {
         </div>
       </div>
 
-      <div class="more-info" style="border:1px dashed #000;">
+      <div class="more-info" style="border-top:1px solid #000;padding-top:5px;">
 
         <div><span class="mi-1"></span></div>
         <div>Type: <span class="mi-2"></span></div>
@@ -129,9 +129,10 @@ $(document).ready(function () {
         <div>Color: <span class="mi-4"></span></div>
         <div>Engine size: <span class="mi-5"></span></div>
         <div>Transmission: <span class="mi-6"></span></div>
-        <div>MSRP: <span class="mi-7"></span></div>
+        <div>MSRP: $<span class="mi-7"></span></div>
         <div>Mpg:<span class="mi-8"></span></div>
         <div>Dealer Phone #: <span class="mi-9"></span></div>
+        <div class="bottom-border-box" style="padding-bottom:10px;border-bottom:1px solid #000;"></div>
 
         <div class="close-window" style="text-align:right;"><mark><small>(less)</less></mark></div>
 
