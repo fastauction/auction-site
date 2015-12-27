@@ -23,6 +23,8 @@ $(document).ready(function () {
   $.getJSON(getVehicleInventory, function (allInventory){
     $(".hx1").append("<span>" +allInventory[1].FIELD4+ " " +allInventory[1].FIELD5+ " " +allInventory[1].FIELD6+ "</span>");
     $(".hx2").append("<span>" +(commaSeparateNumber(allInventory[1].FIELD53))+ "</span");
+    $(".mi-1").append("<span>" +allInventory[1].FIELD1+ " " +allInventory[1].FIELD4+ " " +allInventory[1].FIELD5+ " " +allInventory[1].FIELD6+ "</span>");
+    $(".mi-2").append("<span>" +allInventory[1].FIELD7+ "</span>");
     console.info('current CSV :',allInventory);
     console.log(allInventory[1].FIELD5);
   });
