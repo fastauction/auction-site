@@ -102,14 +102,14 @@
     </script>
 
     <style>
-        .hx1-info:hover {
+        .hx1-info:hover,.2-hx1-info:hover {
             text-transform: capitalize;
         }
-        .more-info {
+        .more-info,.2-more-info {
             padding: 10px;
             display: none;
         }
-        .close-window:hover {
+        .close-window:hover,.2-close-window:hover {
             background-color: yellow;
         }
     </style>
@@ -362,7 +362,7 @@
     </script>
 
 <script>
-    var endTime = new Date(2016, 1, 5).getTime() / 1000;
+    var endTime = new Date(2015, 12, 5).getTime() / 1000;
     function setClock() {
     var elapsed = new Date().getTime() / 1000;
     var totalSec =  endTime - elapsed;
@@ -379,20 +379,20 @@ setClock();
 </script>
 
 <script>
-    var endTime = new Date(2016, 6, 2).getTime() / 1000;
-    function setClock() {
+    var endTime2 = new Date(2015, 12, 4).getTime() / 1000;
+    function setClock2() {
     var elapsed = new Date().getTime() / 1000;
-    var totalSec =  endTime - elapsed;
+    var totalSec =  endTime2 - elapsed;
     var d = parseInt( totalSec / 86400 );
     var h = parseInt( totalSec / 3600 ) % 24;
     var m = parseInt( totalSec / 60 ) % 60;
     var s = parseInt(totalSec % 60, 10);
     var result = d+ " d " + h + " h " + m + " m " + s + " s ";
     document.getElementById('2-timeRemaining').innerHTML = result;
-    setTimeout(setClock, 1000);
+    setTimeout(setClock2, 1000);
     //console.info("end of auction #1: ",endTime);
 }
-setClock();
+setClock2();
 </script>
 
 </body>
