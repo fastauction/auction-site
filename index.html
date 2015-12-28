@@ -65,6 +65,23 @@ $(document).ready(function () {
     });
     </script>
 
+    <script>
+    //1st timer
+    var endTime = new Date(2016, 1, 5).getTime() / 1000;
+    function setClock() {
+    var elapsed = new Date().getTime() / 1000;
+    var totalSec =  endTime - elapsed;
+    var d = parseInt( totalSec / 86400 );
+    var h = parseInt( totalSec / 3600 ) % 24;
+    var m = parseInt( totalSec / 60 ) % 60;
+    var s = parseInt(totalSec % 60, 10);
+    var result = d+ " d " + h + " h " + m + " m " + s + " s ";
+    document.getElementById('timeRemaining').innerHTML = result;
+    setTimeout(setClock, 1000);
+}
+setClock();
+    </script>
+
     <style>
 .hx1-info:hover{
   text-transform: capitalize;
@@ -115,7 +132,7 @@ $(document).ready(function () {
     <h6 class="subheader">Reserve: <i class="fi-check" style="background-color:lightgreen;"></i> Met</h6>
     <h6 class="subheader">Your Bid: $--,---.00</h6>
     <h6 class="subheader" style="padding-bottom:5px;">Number of bids: <a href="#">7</a></h6>
-    <h6 class="subheader" style="text-align:center;background-color:#ff6666;border-radius:4px;">Auction Ends: 1d 4h 17m</h6>
+    <h6 class="subheader" style="text-align:center;background-color:#ff6666;border-radius:4px;">Auction Ends: <span id="timeRemaining"></span></h6>
     <h6 class="subheader" style="padding-top:10px;">Warranty available? <a href="#"><mark>Yes</mark></a></h6>
 
       <div class="hx1-info">
