@@ -72,14 +72,15 @@
     </script>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function auction1() {
             $(".hx1-info").click(function() {
                 $(".more-info").slideDown("slow");
+                console.info(auction1);
             });
         });
     </script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function auction2() {
             $(".close-window").click(function() {
                 $(".more-info").hide("slow");
             });
@@ -87,14 +88,14 @@
     </script>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function auction3() {
             $(".2-hx1-info").click(function() {
                 $(".2-more-info").slideDown("slow");
             });
         });
     </script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function auction4() {
             $(".2-close-window").click(function() {
                 $(".2-more-info").hide("slow");
             });
@@ -391,7 +392,7 @@ setClock();
     var result = d+ " d " + h + " h " + m + " m " + s + " s ";
     document.getElementById('2-timeRemaining').innerHTML = result;
     setTimeout(setClock2, 1000);
-    //console.info("end of auction #1: ",endTime);
+    //console.info("end of auction #2: ",endTime2);
 }
 setClock2();
 </script>
