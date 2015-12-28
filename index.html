@@ -24,7 +24,8 @@ $(document).ready(function () {
   $.getJSON(getVehicleInventory, function (allInventory){
     $(".hx1").append("<span>" +allInventory[1].FIELD4+ " " +allInventory[1].FIELD5+ " " +allInventory[1].FIELD6+ "</span>");
     $(".hx2").append("<span>" +(commaSeparateNumber(allInventory[1].FIELD53))+ "</span");
-    $(".mi-1").append("<span>" +allInventory[1].FIELD1+ " " +allInventory[1].FIELD4+ " " +allInventory[1].FIELD5+ " " +allInventory[1].FIELD6+ "</span>");
+    $(".mi-1").append("<span>" +allInventory[1].FIELD4+ " " +allInventory[1].FIELD5+ " " +allInventory[1].FIELD6+ "</span>");
+    $(".mi-cond").append("<span>" +allInventory[1].FIELD1+ "</span>");
     $(".mi-2").append("<span>" +allInventory[1].FIELD7+ "</span>");
     $(".mi-3").append("<span>" +allInventory[1].FIELD8+ "</span>");
     $(".mi-4").append("<span>" +allInventory[1].FIELD11+ "</span>");
@@ -72,6 +73,9 @@ $(document).ready(function () {
     padding: 10px;
     display: none;
 }
+.close-window:hover{
+  text-transform:capitalize;
+}
 </style>
 
 </head>
@@ -109,11 +113,10 @@ $(document).ready(function () {
         </div>
     </a>
     <h6 class="subheader">Reserve: <i class="fi-check" style="background-color:lightgreen;"></i> Met</h6>
-    <h6 class="subheader">Your Bid: $00,000.00</h6>
-    <h6 class="subheader">Number of bids: <a href="#">7</a></h6>
+    <h6 class="subheader">Your Bid: $--,---.00</h6>
+    <h6 class="subheader" style="padding-bottom:5px;">Number of bids: <a href="#">7</a></h6>
     <h6 class="subheader" style="text-align:center;background-color:#ff6666;border-radius:4px;">Auction Ends: 1d 4h 17m</h6>
-    <h6 class="subheader">Condition: <u>New</u></h6>
-    <h6 class="subheader">Qualifies for Warranty? <a href="#"><mark>Yes</mark></a></h6>
+    <h6 class="subheader" style="padding-top:10px;">Warranty available? <a href="#"><mark>Yes</mark></a></h6>
 
       <div class="hx1-info">
         <div class="panel radius callout" style="text-align: center">
@@ -123,7 +126,8 @@ $(document).ready(function () {
 
       <div class="more-info" style="border-top:1px solid #000;padding-top:5px;">
 
-        <div><span class="mi-1"></span></div>
+        <div style="text-align:center;"><span class="mi-1"></span></div>
+        <div>Condition: <span class="mi-cond"></span></div>
         <div>Type: <span class="mi-2"></span></div>
         <div>Trim: <span class="mi-3"></span></div>
         <div>Color: <span class="mi-4"></span></div>
