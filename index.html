@@ -67,6 +67,7 @@ $(document).ready(function () {
 
     <script>
     //1st timer
+    window.onload = function() {
     var endTime = new Date(2016, 1, 5).getTime() / 1000;
     function setClock() {
     var elapsed = new Date().getTime() / 1000;
@@ -78,7 +79,7 @@ $(document).ready(function () {
     var result = d+ " d " + h + " h " + m + " m " + s + " s ";
     document.getElementById('timeRemaining').innerHTML = result;
     setTimeout(setClock, 1000);
-}
+}};
 setClock();
     </script>
 
