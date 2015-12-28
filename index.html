@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="./js/vendor/modernizr.js"></script>
-    
+
     <script>
      console.info("welcome to my Auction Trader live auction website :)");
      //alert("This is a BETA version of my Auction Trader, please do not bid yet!");
@@ -32,7 +32,7 @@ $(document).ready(function () {
     $(".mi-6").append("<span>" +allInventory[1].FIELD15+ "</span>");
     $(".mi-7").append("<span>" +(commaSeparateNumber(allInventory[1].FIELD18))+ "</span>");
     $(".mi-8").append("<span> City: " +allInventory[1].FIELD49+ " / Hwy: " +allInventory[1].FIELD50+ "</span>");
-    $(".mi-9").append("<span>" +allInventory[1].FIELD30+ "</span>");
+    $(".mi-9").append("<span>" +(allInventory[1].FIELD30.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3"))+ "</span>");
     console.info('current CSV :',allInventory);
   });
 });
