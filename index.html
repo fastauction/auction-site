@@ -15,6 +15,7 @@
 
     <script>
      console.info("welcome to my Auction Trader live auction website :)");
+     console.info("my Auction Trader is an Aucion Overdrive company, All Rights Reserved");
      //alert("This is a BETA version of my Auction Trader, please do not bid yet!");
     </script>
 
@@ -35,6 +36,7 @@ $(document).ready(function () {
     $(".mi-8").append("<span> City: " +allInventory[1].FIELD49+ " / Hwy: " +allInventory[1].FIELD50+ "</span>");
     $(".mi-9").append("<span>" +(allInventory[1].FIELD30.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3"))+ "</span>");
     $(".dealer-phone").wrap( "<a href=tel:" +allInventory[1].FIELD30+ "></a>");
+    $(".mi-10").append("<span>" +allInventory[1].FIELD2+ "</span>");
     console.info('current CSV :',allInventory);
   });
 });
@@ -149,8 +151,11 @@ $(document).ready(function () {
             </div>
             <div style="padding-top:10px;">MPG<span class="mi-8"></span>
             </div>
-            <div style="padding-top:10px;padding-bottom:20px;">Dealer Phone #: <span class="dealer-phone"><span class="mi-9"></span></span>
+            <div style="padding-top:10px;">Dealer Phone #: <span class="dealer-phone"><span class="mi-9"></span></span>
             </div>
+            <div style="padding-top:10px;padding-bottom:20px;">Auction ID: <span class="mi-10"></span>
+            </div>
+
 
             <div class="share-button" style="border-radius:4px; margin:0 auto; background-color:lightgreen;padding-left:10px;padding-bottom:5px;"><a href="./options/social-media-share.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;"><i class="fi-share"></i><span> Share this auction</span></a>
             </div>
