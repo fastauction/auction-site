@@ -41,7 +41,22 @@
                 $(".mi-9").append("<span>" + (allInventory[1].FIELD30.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3")) + "</span>");
                 $(".dealer-phone").wrap("<a href=tel:" + allInventory[1].FIELD30 + "></a>");
                 $(".mi-10").append("<span>" + allInventory[1].FIELD2 + "</span>");
-                console.info('current CSV :', allInventory);
+                //console.info('current CSV :', allInventory);
+                //start 2nd auction, gather data from json files
+                $(".2-hx1").append("<span>" + allInventory[2].FIELD4 + " " + allInventory[2].FIELD5 + " " + allInventory[2].FIELD6 + "</span>");
+                $(".2-hx2").append("<span>" + (commaSeparateNumber(allInventory[2].FIELD53)) + "</span");
+                $(".2-mi-1").append("<span>" + allInventory[2].FIELD4 + " " + allInventory[2].FIELD5 + " " + allInventory[2].FIELD6 + "</span>");
+                $(".2-mi-cond").append("<span>" + allInventory[2].FIELD1 + "</span>");
+                $(".2-mi-2").append("<span>" + allInventory[2].FIELD7 + "</span>");
+                $(".2-mi-3").append("<span>" + allInventory[2].FIELD8 + "</span>");
+                $(".2-mi-4").append("<span>" + allInventory[2].FIELD11 + "</span>");
+                $(".2-mi-5").append("<span>" + allInventory[2].FIELD14 + "</span>");
+                $(".2-mi-6").append("<span>" + allInventory[2].FIELD15 + "</span>");
+                $(".2-mi-7").append("<span>" + (commaSeparateNumber(allInventory[2].FIELD18)) + "</span>");
+                $(".2-mi-8").append("<span> City: " + allInventory[2].FIELD49 + " / Hwy: " + allInventory[2].FIELD50 + "</span>");
+                $(".2-mi-9").append("<span>" + (allInventory[2].FIELD30.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3")) + "</span>");
+                $(".2-dealer-phone").wrap("<a href=tel:" + allInventory[2].FIELD30 + "></a>");
+                $(".2-mi-10").append("<span>" + allInventory[2].FIELD2 + "</span>");
             });
         });
     </script>
@@ -117,7 +132,7 @@
             </ul>
         </div>
         <hr>
-    </div>
+    </div><!--end of the header-->
 
     <!--start of auction row-->
     <div class="row" style="border:1px dashed #000;">
@@ -182,13 +197,64 @@
 
 <!--start of column 2-->
 
+<div class="large-3 medium-4 small-6 columns">
+    <img src="./img/auction-image-1.png" alt="2015 Kia Rio on My Auction Trader dot com website" title="myAuctionTrader.com 2015 Kia Rio">
+    <div class="panel">
+        <h5 class="2-hx1" style="text-align:center;"></h5>
+        <h6 class="subheader">Last Bid: $<span class="2-hx2"></span>.00</h6>
+        <a href="./member/login.html">
+            <div class="small success button" style="text-align:center;width:100%;border-radius:4px;">
+                <strong>Bid Now</strong>
+            </div>
+        </a>
+        <h6 class="subheader">Reserve: <i class="fi-x" style="background-color:lightred;"></i> Not Met</h6>
+        <h6 class="subheader">Your Bid: $--,---.00</h6>
+        <h6 class="subheader" style="padding-bottom:5px;">Number of bids: <a href="./options/bid-history.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;">4</a></h6>
+        <h6 class="subheader" style="text-align:center;background-color:#ff6666;border-radius:4px;">Auction Ends: <span id="2-timeRemaining"></span></h6>
+        <h6 class="subheader" style="padding-top:10px;">Warranty available? <a href="./options/warranty-options.html"><mark>Yes</mark></a></h6>
 
+        <div class="hx1-info">
+            <div class="panel radius callout" style="text-align: center">
+                <span>more info</span>
+            </div>
+        </div>
 
+        <div class="more-info" style="padding-top:10px;border-top:1px solid #000;padding-top:5px;margin-top:15px;">
 
+            <div style="text-align:center;padding-top:10px;"><span class="2-mi-1"></span>
+            </div>
+            <div style="padding-top:10px;">Condition: <span class="2-mi-cond"></span>
+            </div>
+            <div style="padding-top:10px;">Type: <span class="2-mi-2"></span>
+            </div>
+            <div style="padding-top:10px;">Trim: <span class="2-mi-3"></span>
+            </div>
+            <div style="padding-top:10px;">Color: <span class="2-mi-4"></span>
+            </div>
+            <div style="padding-top:10px;">Engine size: <span class="2-mi-5"></span>
+            </div>
+            <div style="padding-top:10px;">Transmission: <span class="2-mi-6"></span>
+            </div>
+            <div style="padding-top:10px;">MSRP: $<span class="2-mi-7"></span>
+            </div>
+            <div style="padding-top:10px;">MPG<span class="2-mi-8"></span>
+            </div>
+            <div style="padding-top:10px;">Dealer Phone #: <span class="2-dealer-phone"><span class="2-mi-9"></span></span>
+            </div>
+            <div style="padding-top:10px;padding-bottom:20px;">Auction ID: <span class="2-mi-10"></span>
+            </div>
 
-
+            <div class="share-button" style="border-radius:4px; margin:0 auto; background-color:lightgreen;padding-left:10px;padding-bottom:5px;"><a href="./options/social-media-share.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;"><i class="fi-share"></i><span> Share this auction</span></a>
+            </div>
+            <div class="bottom-border-box" style="padding-bottom:10px;border-bottom:1px solid #000;"></div>
+            <div class="close-window" style="text-align:right;">
+                <mark><small>(less)</less></mark></div>
+          </div><!--end of more-info div-->
+        </div>
+      </div><!--end of bid column-->
 
 <!--end of column 2-->
+
     </div><!--row-->
   </div><!--column-->
 
