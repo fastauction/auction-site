@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>my Auction Trader ©</title>
-    
+
     <link rel="icon" type="image/png" href="./img/favicon.ico">
     <link rel="stylesheet" href="./css/foundation.css" />
     <link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
@@ -18,72 +18,72 @@
     <script src="./js/vendor/modernizr.js"></script>
 
     <script>
-     console.info("welcome to my Auction Trader live auction website :)");
-     console.info("my Auction Trader is an Aucion Overdrive company, All Rights Reserved");
-     //alert("This is a BETA version of my Auction Trader, please do not bid yet!");
+        console.info("welcome to my Auction Trader live auction website :)");
+        console.info("my Auction Trader is an Aucion Overdrive company, All Rights Reserved");
+        //alert("This is a BETA version of my Auction Trader, please do not bid yet!");
     </script>
 
     <script>
-$(document).ready(function () {
-  var getVehicleInventory = ("./data/data.json");
-  $.getJSON(getVehicleInventory, function (allInventory){
-    $(".hx1").append("<span>" +allInventory[1].FIELD4+ " " +allInventory[1].FIELD5+ " " +allInventory[1].FIELD6+ "</span>");
-    $(".hx2").append("<span>" +(commaSeparateNumber(allInventory[1].FIELD53))+ "</span");
-    $(".mi-1").append("<span>" +allInventory[1].FIELD4+ " " +allInventory[1].FIELD5+ " " +allInventory[1].FIELD6+ "</span>");
-    $(".mi-cond").append("<span>" +allInventory[1].FIELD1+ "</span>");
-    $(".mi-2").append("<span>" +allInventory[1].FIELD7+ "</span>");
-    $(".mi-3").append("<span>" +allInventory[1].FIELD8+ "</span>");
-    $(".mi-4").append("<span>" +allInventory[1].FIELD11+ "</span>");
-    $(".mi-5").append("<span>" +allInventory[1].FIELD14+ "</span>");
-    $(".mi-6").append("<span>" +allInventory[1].FIELD15+ "</span>");
-    $(".mi-7").append("<span>" +(commaSeparateNumber(allInventory[1].FIELD18))+ "</span>");
-    $(".mi-8").append("<span> City: " +allInventory[1].FIELD49+ " / Hwy: " +allInventory[1].FIELD50+ "</span>");
-    $(".mi-9").append("<span>" +(allInventory[1].FIELD30.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3"))+ "</span>");
-    $(".dealer-phone").wrap( "<a href=tel:" +allInventory[1].FIELD30+ "></a>");
-    $(".mi-10").append("<span>" +allInventory[1].FIELD2+ "</span>");
-    console.info('current CSV :',allInventory);
-  });
-});
+        $(document).ready(function() {
+            var getVehicleInventory = ("./data/data.json");
+            $.getJSON(getVehicleInventory, function(allInventory) {
+                $(".hx1").append("<span>" + allInventory[1].FIELD4 + " " + allInventory[1].FIELD5 + " " + allInventory[1].FIELD6 + "</span>");
+                $(".hx2").append("<span>" + (commaSeparateNumber(allInventory[1].FIELD53)) + "</span");
+                $(".mi-1").append("<span>" + allInventory[1].FIELD4 + " " + allInventory[1].FIELD5 + " " + allInventory[1].FIELD6 + "</span>");
+                $(".mi-cond").append("<span>" + allInventory[1].FIELD1 + "</span>");
+                $(".mi-2").append("<span>" + allInventory[1].FIELD7 + "</span>");
+                $(".mi-3").append("<span>" + allInventory[1].FIELD8 + "</span>");
+                $(".mi-4").append("<span>" + allInventory[1].FIELD11 + "</span>");
+                $(".mi-5").append("<span>" + allInventory[1].FIELD14 + "</span>");
+                $(".mi-6").append("<span>" + allInventory[1].FIELD15 + "</span>");
+                $(".mi-7").append("<span>" + (commaSeparateNumber(allInventory[1].FIELD18)) + "</span>");
+                $(".mi-8").append("<span> City: " + allInventory[1].FIELD49 + " / Hwy: " + allInventory[1].FIELD50 + "</span>");
+                $(".mi-9").append("<span>" + (allInventory[1].FIELD30.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3")) + "</span>");
+                $(".dealer-phone").wrap("<a href=tel:" + allInventory[1].FIELD30 + "></a>");
+                $(".mi-10").append("<span>" + allInventory[1].FIELD2 + "</span>");
+                console.info('current CSV :', allInventory);
+            });
+        });
     </script>
 
     <script>
-    //function to add commas to price
-    function commaSeparateNumber(val){
-    while (/(\d+)(\d{3})/.test(val.toString())){
-      val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
-    }
-    return val;
-  }
+        //function to add commas to price
+        function commaSeparateNumber(val) {
+            while (/(\d+)(\d{3})/.test(val.toString())) {
+                val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+            }
+            return val;
+        }
     </script>
 
     <script>
-    $(document).ready(function(){
-      $(".hx1-info").click(function(){
-        $(".more-info").slideDown("slow");
-      });
-    });
+        $(document).ready(function() {
+            $(".hx1-info").click(function() {
+                $(".more-info").slideDown("slow");
+            });
+        });
     </script>
 
     <script>
-    $(document).ready(function(){
-    $( ".close-window" ).click(function() {
-      $( ".more-info" ).hide("slow");
-      });
-    });
+        $(document).ready(function() {
+            $(".close-window").click(function() {
+                $(".more-info").hide("slow");
+            });
+        });
     </script>
 
     <style>
-.hx1-info:hover{
-  text-transform: capitalize;
-}
-.more-info {
-    padding: 10px;
-    display: none;
-}
-.close-window:hover{
-  background-color:yellow;
-}
-</style>
+        .hx1-info:hover {
+            text-transform: capitalize;
+        }
+        .more-info {
+            padding: 10px;
+            display: none;
+        }
+        .close-window:hover {
+            background-color: yellow;
+        }
+    </style>
 
 </head>
 
@@ -92,78 +92,80 @@ $(document).ready(function () {
     <div class="row">
 
         <div class="large-4 columns">
-            <img src="http://placehold.it/400x100&amp;text=400x100+logo"><h1>my Auction Trader</h1>
+            <img src="http://placehold.it/400x100&amp;text=400x100+logo">
+            <h1>my Auction Trader</h1>
         </div>
 
         <div class="large-8 columns">
-                <ul class="right">
-                    <span><a href="http://www.facebook.com/myvipauctions"  style="display:inline-block;box-sizing:border-box;background-color:#fff"><img src="./img/facebook-icon.png"></a>
+            <ul class="right">
+                <span><a href="http://www.facebook.com/myvipauctions"  style="display:inline-block;box-sizing:border-box;background-color:#fff"><img src="./img/facebook-icon.png"></a>
                     </span>
-                    <span><a href="http://www.twitter.com/myvipauctions"  style="display:inline-block;box-sizing:border-box;background-color:#fff"><img src="./img/twitter-icon.png"></a>
+                <span><a href="http://www.twitter.com/myvipauctions"  style="display:inline-block;box-sizing:border-box;background-color:#fff"><img src="./img/twitter-icon.png"></a>
                     </span>
-                    <span><a href="http://www.youtube.com/user/AuctionOverdrive"  style="display:inline-block;box-sizing:border-box;background-color:#fff"><img src="./img/youtube-icon.png"></a>
+                <span><a href="http://www.youtube.com/user/AuctionOverdrive"  style="display:inline-block;box-sizing:border-box;background-color:#fff"><img src="./img/youtube-icon.png"></a>
                     </span>
-                </ul>
-            </div>
+            </ul>
+        </div>
         <hr>
     </div>
 
-<!--start of auction row-->
-<div class="row" style="border:1px dashed #000;">
-<div class="large-12 columns">
+    <!--start of auction row-->
+    <div class="row" style="border:1px dashed #000;">
+        <div class="large-12 columns">
 
-      <!--start of 1st block-->
-  <div class="large-3 medium-4 small-6 columns">
-   <img src="./img/auction-image-1.png" alt="2015 Kia Rio on My Auction Trader dot com website" title="myAuctionTrader.com 2015 Kia Rio">
-    <div class="panel">
-        <h5 class="hx1" style="text-align:center;"></h5>
-        <h6 class="subheader">Last Bid: $<span class="hx2"></span>.00</h6>
-        <a href="./member/login.html">
-            <div class="small success button" style="text-align:center;width:100%;border-radius:4px;">
-                <strong>Bid Now</strong>
-            </div>
-        </a>
-        <h6 class="subheader">Reserve: <i class="fi-check" style="background-color:lightgreen;"></i> Met</h6>
-        <h6 class="subheader">Your Bid: $--,---.00</h6>
-        <h6 class="subheader" style="padding-bottom:5px;">Number of bids: <a href="./options/bid-history.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;">7</a></h6>
-        <h6 class="subheader" style="text-align:center;background-color:#ff6666;border-radius:4px;">Auction Ends: <span id="timeRemaining"></span></h6>
-        <h6 class="subheader" style="padding-top:10px;">Warranty available? <a href="./options/warranty-options.html"><mark>Yes</mark></a></h6>
+            <!--start of 1st block-->
+            <div class="large-3 medium-4 small-6 columns">
+                <img src="./img/auction-image-1.png" alt="2015 Kia Rio on My Auction Trader dot com website" title="myAuctionTrader.com 2015 Kia Rio">
+                <div class="panel">
+                    <h5 class="hx1" style="text-align:center;"></h5>
+                    <h6 class="subheader">Last Bid: $<span class="hx2"></span>.00</h6>
+                    <a href="./member/login.html">
+                        <div class="small success button" style="text-align:center;width:100%;border-radius:4px;">
+                            <strong>Bid Now</strong>
+                        </div>
+                    </a>
+                    <h6 class="subheader">Reserve: <i class="fi-check" style="background-color:lightgreen;"></i> Met</h6>
+                    <h6 class="subheader">Your Bid: $--,---.00</h6>
+                    <h6 class="subheader" style="padding-bottom:5px;">Number of bids: <a href="./options/bid-history.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;">7</a></h6>
+                    <h6 class="subheader" style="text-align:center;background-color:#ff6666;border-radius:4px;">Auction Ends: <span id="timeRemaining"></span></h6>
+                    <h6 class="subheader" style="padding-top:10px;">Warranty available? <a href="./options/warranty-options.html"><mark>Yes</mark></a></h6>
 
-        <div class="hx1-info">
-            <div class="panel radius callout" style="text-align: center">
-                <span>more info</span>
-            </div>
-        </div>
+                    <div class="hx1-info">
+                        <div class="panel radius callout" style="text-align: center">
+                            <span>more info</span>
+                        </div>
+                    </div>
 
-        <div class="more-info" style="padding-top:10px;border-top:1px solid #000;padding-top:5px;margin-top:15px;">
+                    <div class="more-info" style="padding-top:10px;border-top:1px solid #000;padding-top:5px;margin-top:15px;">
 
-            <div style="text-align:center;padding-top:10px;"><span class="mi-1"></span>
-            </div>
-            <div style="padding-top:10px;">Condition: <span class="mi-cond"></span>
-            </div>
-            <div style="padding-top:10px;">Type: <span class="mi-2"></span>
-            </div>
-            <div style="padding-top:10px;">Trim: <span class="mi-3"></span>
-            </div>
-            <div style="padding-top:10px;">Color: <span class="mi-4"></span>
-            </div>
-            <div style="padding-top:10px;">Engine size: <span class="mi-5"></span>
-            </div>
-            <div style="padding-top:10px;">Transmission: <span class="mi-6"></span>
-            </div>
-            <div style="padding-top:10px;">MSRP: $<span class="mi-7"></span>
-            </div>
-            <div style="padding-top:10px;">MPG<span class="mi-8"></span>
-            </div>
-            <div style="padding-top:10px;">Dealer Phone #: <span class="dealer-phone"><span class="mi-9"></span></span>
-            </div>
-            <div style="padding-top:10px;padding-bottom:20px;">Auction ID: <span class="mi-10"></span>
-            </div>
+                        <div style="text-align:center;padding-top:10px;"><span class="mi-1"></span>
+                        </div>
+                        <div style="padding-top:10px;">Condition: <span class="mi-cond"></span>
+                        </div>
+                        <div style="padding-top:10px;">Type: <span class="mi-2"></span>
+                        </div>
+                        <div style="padding-top:10px;">Trim: <span class="mi-3"></span>
+                        </div>
+                        <div style="padding-top:10px;">Color: <span class="mi-4"></span>
+                        </div>
+                        <div style="padding-top:10px;">Engine size: <span class="mi-5"></span>
+                        </div>
+                        <div style="padding-top:10px;">Transmission: <span class="mi-6"></span>
+                        </div>
+                        <div style="padding-top:10px;">MSRP: $<span class="mi-7"></span>
+                        </div>
+                        <div style="padding-top:10px;">MPG<span class="mi-8"></span>
+                        </div>
+                        <div style="padding-top:10px;">Dealer Phone #: <span class="dealer-phone"><span class="mi-9"></span></span>
+                        </div>
+                        <div style="padding-top:10px;padding-bottom:20px;">Auction ID: <span class="mi-10"></span>
+                        </div>
 
-            <div class="share-button" style="border-radius:4px; margin:0 auto; background-color:lightgreen;padding-left:10px;padding-bottom:5px;"><a href="./options/social-media-share.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;"><i class="fi-share"></i><span> Share this auction</span></a>
-            </div>
-          <div class="bottom-border-box" style="padding-bottom:10px;border-bottom:1px solid #000;"></div>
-        <div class="close-window" style="text-align:right;"><mark><small>(less)</less></mark></div>
+                        <div class="share-button" style="border-radius:4px; margin:0 auto; background-color:lightgreen;padding-left:10px;padding-bottom:5px;"><a href="./options/social-media-share.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;"><i class="fi-share"></i><span> Share this auction</span></a>
+                        </div>
+                        <div class="bottom-border-box" style="padding-bottom:10px;border-bottom:1px solid #000;"></div>
+                        <div class="close-window" style="text-align:right;">
+                            <mark><small>(less)</less></mark></div>
       </div><!--end of more-info div-->
     </div>
   </div><!--end of bid column-->
