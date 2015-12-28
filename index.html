@@ -78,11 +78,25 @@
             });
         });
     </script>
-
     <script>
         $(document).ready(function() {
             $(".close-window").click(function() {
                 $(".more-info").hide("slow");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $(".2-hx1-info").click(function() {
+                $(".2-more-info").slideDown("slow");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".2-close-window").click(function() {
+                $(".2-more-info").hide("slow");
             });
         });
     </script>
@@ -207,19 +221,19 @@
                 <strong>Bid Now</strong>
             </div>
         </a>
-        <h6 class="subheader">Reserve: <i class="fi-x" style="background-color:lightred;"></i> Not Met</h6>
+        <h6 class="subheader">Reserve: <i class="fi-x" style="background-color:red;"></i> Not Met</h6>
         <h6 class="subheader">Your Bid: $--,---.00</h6>
         <h6 class="subheader" style="padding-bottom:5px;">Number of bids: <a href="./options/bid-history.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;">4</a></h6>
         <h6 class="subheader" style="text-align:center;background-color:#ff6666;border-radius:4px;">Auction Ends: <span id="2-timeRemaining"></span></h6>
         <h6 class="subheader" style="padding-top:10px;">Warranty available? <a href="./options/warranty-options.html"><mark>Yes</mark></a></h6>
 
-        <div class="hx1-info">
+        <div class="2-hx1-info">
             <div class="panel radius callout" style="text-align: center">
                 <span>more info</span>
             </div>
         </div>
 
-        <div class="more-info" style="padding-top:10px;border-top:1px solid #000;padding-top:5px;margin-top:15px;">
+        <div class="2-more-info" style="padding-top:10px;border-top:1px solid #000;padding-top:5px;margin-top:15px;">
 
             <div style="text-align:center;padding-top:10px;"><span class="2-mi-1"></span>
             </div>
@@ -247,7 +261,7 @@
             <div class="share-button" style="border-radius:4px; margin:0 auto; background-color:lightgreen;padding-left:10px;padding-bottom:5px;"><a href="./options/social-media-share.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;"><i class="fi-share"></i><span> Share this auction</span></a>
             </div>
             <div class="bottom-border-box" style="padding-bottom:10px;border-bottom:1px solid #000;"></div>
-            <div class="close-window" style="text-align:right;">
+            <div class="2-close-window" style="text-align:right;">
                 <mark><small>(less)</less></mark></div>
           </div><!--end of more-info div-->
         </div>
@@ -358,6 +372,23 @@
     var s = parseInt(totalSec % 60, 10);
     var result = d+ " d " + h + " h " + m + " m " + s + " s ";
     document.getElementById('timeRemaining').innerHTML = result;
+    setTimeout(setClock, 1000);
+    //console.info("end of auction #1: ",endTime);
+}
+setClock();
+</script>
+
+<script>
+    var endTime = new Date(2016, 6, 2).getTime() / 1000;
+    function setClock() {
+    var elapsed = new Date().getTime() / 1000;
+    var totalSec =  endTime - elapsed;
+    var d = parseInt( totalSec / 86400 );
+    var h = parseInt( totalSec / 3600 ) % 24;
+    var m = parseInt( totalSec / 60 ) % 60;
+    var s = parseInt(totalSec % 60, 10);
+    var result = d+ " d " + h + " h " + m + " m " + s + " s ";
+    document.getElementById('2-timeRemaining').innerHTML = result;
     setTimeout(setClock, 1000);
     //console.info("end of auction #1: ",endTime);
 }
