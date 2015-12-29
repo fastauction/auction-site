@@ -36,8 +36,7 @@
         success: function(xml){
             values = xml.responseData.feed.entries;
             console.log(values);
-            console.info(xml);
-            console.info(xml.responseData);
+            console.info(values[0].title);
         }
     });
     });
