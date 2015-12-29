@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/auction.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="./js/vendor/modernizr.js"></script>
+    <script src="./js/auction-project/pricecomma.js"></script>
 
     <script>
         console.info("welcome to my Auction Trader live auction website :)");
@@ -150,16 +151,6 @@
                 $(".8-mi-10").append("<span>" + allInventory[8].FIELD2 + "</span>");
             });
         });
-    </script>
-
-    <script>
-        //function to add commas to price
-        function commaSeparateNumber(val) {
-            while (/(\d+)(\d{3})/.test(val.toString())) {
-                val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
-            }
-            return val;
-        }
     </script>
 
     <script>
