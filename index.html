@@ -1083,7 +1083,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
     </script>
 
     <script>
-        var endTime7 = new Date(2015, 12, 3).getTime() / 1000;
+        var endTime7 = new Date(2015, 12, 10).getTime() / 1000;
 
         function setClock7() {
             var elapsed = new Date().getTime() / 1000;
@@ -1094,7 +1094,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
             var s = parseInt(totalSec % 60, 10);
             var result = d + " d " + h + " h " + m + " m " + s + " s ";
             document.getElementById('7-timeRemaining').innerHTML = result;
-            setTimeout(setClock3, 1000);
+            setTimeout(setClock7, 1000);
             //console.info("end of auction #7: ",endTime7);
         }
         setClock7();
