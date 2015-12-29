@@ -1,0 +1,10 @@
+.more-info {
+  padding: 10px;
+  display: none;
+}
+.generic-hover-mi:hover{
+  text-transform: capitalize !important;
+}
+.generic-hover-cw:hover{
+  background-color: #ffff00 !important;
+}
