@@ -24,15 +24,12 @@
     <script src="./js/auction-project/chat.js"></script>
 
     <script>
-    $.get("http://rss.autoweek.com/?page=n-55998?callback=?", function (data) {
-    $(data).find("entry").each(function () { // or "item" or whatever suits your feed
-        var el = $(this);
-
-        console.log("------------------------");
-        console.log("title      : " + el.find("title").text());
-        console.log("author     : " + el.find("author").text());
-        console.log("description: " + el.find("description").text());
-    });
+var FEED_URL = "http://rss.autoweek.com/?page=n-55998?callback=?";
+    jQuery.getFeed({
+   url     : FEED_URL,
+   success : function (feed) {
+      console.log(feed.title);
+   }
 });
     </script>
 
