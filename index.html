@@ -110,19 +110,10 @@
             display: none;
         }
         .close-window:hover {
-            background-color: yellow;
-        }
-        .2-hx1-info:hover {
-            text-transform: capitalize;
-        }
-        .2-more-info {
-            padding: 10px;
-            display: none;
-        }
-        .2-close-window:hover {
-            background-color: yellow;
+            background-color: #ffff00;
         }
     </style>
+
 
     <!--Start of Zopim Live Chat Script-->
 <script type="text/javascript">
@@ -243,13 +234,13 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
                     <h6 class="subheader" style="text-align:center;background-color:#ff6666;border-radius:4px;">Auction Ends: <span id="2-timeRemaining"></span></h6>
                     <h6 class="subheader" style="padding-top:10px;">Warranty available? <a href="./options/warranty-options.html"><mark>Yes</mark></a></h6>
 
-                    <div class="2-hx1-info">
+                    <div class="2-hx1-info" onmouseover='this.style.text-transform="capitalize="'>
                         <div class="panel radius callout" style="text-align: center">
                             <span>more info</span>
                         </div>
                     </div>
 
-                    <div class="2-more-info" style="padding-top:10px;border-top:1px solid #000;padding-top:5px;margin-top:15px;">
+                    <div class="2-more-info" style="padding-top:10px;border-top:1px solid #000;padding-top:5px;margin-top:15px;display:none;padding:10px;">
 
                         <div style="text-align:center;padding-top:10px;"><span class="2-mi-1"></span>
                         </div>
@@ -286,6 +277,15 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
                 </div>
             </div>
             <!--end of bid column-->
+
+            <style>
+              .2-hx1-info:hover {
+                  text-transform: capitalize !important;
+              }
+              .2-close-window:hover {
+                  background-color: #ffff00 !important;
+              }
+            </style>
 
             <!--end of column 2-->
 
