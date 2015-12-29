@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var getVehicleInventory = ("./data/data.json");
+    var getVehicleInventory = ("././data/data.json");
     $.getJSON(getVehicleInventory, function(allInventory) {
         $(".hx1").append("<span>" + allInventory[1].FIELD4 + " " + allInventory[1].FIELD5 + " " + allInventory[1].FIELD6 + "</span>");
         $(".hx2").append("<span>" + (commaSeparateNumber(allInventory[1].FIELD53)) + "</span");
