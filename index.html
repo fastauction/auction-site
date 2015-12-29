@@ -25,7 +25,7 @@
 
     <script>
     $(function(){
-        url = "http://rss.autoweek.com/?page=n-55998?callback=?";
+        url = "http://rss.autoweek.com/?page=n-55998";
         $.ajax({
         type: "GET",
         url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=1000&callback=?&q=' + encodeURIComponent(url),
@@ -37,7 +37,7 @@
             values = xml.responseData.feed.entries;
             console.log(values);
             console.info(xml);
-            console.info(responseData);
+            console.info(xml.responseData);
         }
     });
     });
