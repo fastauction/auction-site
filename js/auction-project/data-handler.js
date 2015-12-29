@@ -15,7 +15,7 @@ $(document).ready(function() {
         $(".mi-9").append("<span>" + (allInventory[1].FIELD30.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3")) + "</span>");
         $(".dealer-phone").wrap("<a href=tel:" + allInventory[1].FIELD30 + "></a>");
         $(".mi-10").append("<span>" + allInventory[1].FIELD2 + "</span>");
-        //console.info('current CSV :', allInventory);
+        console.info('current auction CSV :', allInventory);
         //start 2nd auction, gather data from json files
         $(".2-hx1").append("<span>" + allInventory[2].FIELD4 + " " + allInventory[2].FIELD5 + " " + allInventory[2].FIELD6 + "</span>");
         $(".2-hx2").append("<span>" + (commaSeparateNumber(allInventory[2].FIELD53)) + "</span");
