@@ -43,6 +43,33 @@
     });
     </script>
 
+    <script>
+    var marquee = $('.marquee');
+marquee.each(function() {
+    var mar = $(this),indent = mar.width();
+    mar.marquee = function() {
+        indent--;
+        mar.css('text-indent',indent);
+        if (indent < -1 * mar.children('.marquee-text').width()) {
+            indent = mar.width();
+        }
+    };
+    mar.data('interval',setInterval(mar.marquee,1000/60));
+});
+    </script>
+
+    <style>
+    div.marquee {
+    white-space:no-wrap;
+    overflow:hidden;
+}
+div.marquee > div.marquee-text {
+    white-space:nowrap;
+    display:inline;
+    width:auto;
+}
+    </style>
+
 </head>
 
 <body style="padding-top:10px;padding-bottom:30px;">
@@ -662,6 +689,16 @@
 
             </div>
         </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+          <div class='marquee'>
+              <div class='marquee-text'>
+                  Testing this marquee function
+              </div>
+            </div>
+          </div>
     </div>
 
     <footer class="row">
