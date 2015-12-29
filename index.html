@@ -24,7 +24,7 @@
     <script src="./js/auction-project/chat.js"></script>
 
     <script>
-    $.get("http://rss.autoweek.com/?page=n-55998", function (data) {
+    $.get("http://rss.autoweek.com/?page=n-55998?callback=?", function (data) {
     $(data).find("entry").each(function () { // or "item" or whatever suits your feed
         var el = $(this);
 
@@ -35,7 +35,7 @@
     });
 });
     </script>
-    
+
 </head>
 
 <body style="padding-top:10px;padding-bottom:30px;">
