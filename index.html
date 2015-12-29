@@ -24,12 +24,16 @@
     <script src="./js/auction-project/chat.js"></script>
 
     <script>
-var FEED_URL = "http://rss.autoweek.com/?page=n-55998?callback=?";
-    jQuery.getFeed({
-   url     : FEED_URL,
-   success : function (feed) {
-      console.log(feed.title);
-   }
+$(document).ready(function() {
+jQuery.getFeed({
+    url: "http://rss.autoweek.com/?page=n-55998?callback=?",
+    success: function(feed) {
+        for(var i = 0; i < feed.items.length && i < 5; i++) {
+            var item = feed.items[i];
+            $(".feed").append("<div><a href='"+item.link+"'>"+item.title+"</a></div>");
+        }
+    }
+});
 });
     </script>
 
