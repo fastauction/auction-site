@@ -57,6 +57,96 @@
                 $(".2-mi-9").append("<span>" + (allInventory[2].FIELD30.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3")) + "</span>");
                 $(".2-dealer-phone").wrap("<a href=tel:" + allInventory[2].FIELD30 + "></a>");
                 $(".2-mi-10").append("<span>" + allInventory[2].FIELD2 + "</span>");
+                //start 3rd auction, gather data from json files
+                $(".3-hx1").append("<span>" + allInventory[3].FIELD4 + " " + allInventory[3].FIELD5 + " " + allInventory[3].FIELD6 + "</span>");
+                $(".3-hx2").append("<span>" + (commaSeparateNumber(allInventory[3].FIELD53)) + "</span");
+                $(".3-mi-1").append("<span>" + allInventory[3].FIELD4 + " " + allInventory[3].FIELD5 + " " + allInventory[3].FIELD6 + "</span>");
+                $(".3-mi-cond").append("<span>" + allInventory[3].FIELD1 + "</span>");
+                $(".3-mi-2").append("<span>" + allInventory[3].FIELD7 + "</span>");
+                $(".3-mi-3").append("<span>" + allInventory[3].FIELD8 + "</span>");
+                $(".3-mi-4").append("<span>" + allInventory[3].FIELD11 + "</span>");
+                $(".3-mi-5").append("<span>" + allInventory[3].FIELD14 + "</span>");
+                $(".3-mi-6").append("<span>" + allInventory[3].FIELD15 + "</span>");
+                $(".3-mi-7").append("<span>" + (commaSeparateNumber(allInventory[3].FIELD18)) + "</span>");
+                $(".3-mi-8").append("<span> City: " + allInventory[3].FIELD49 + " / Hwy: " + allInventory[3].FIELD50 + "</span>");
+                $(".3-mi-9").append("<span>" + (allInventory[3].FIELD30.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3")) + "</span>");
+                $(".3-dealer-phone").wrap("<a href=tel:" + allInventory[3].FIELD30 + "></a>");
+                $(".3-mi-10").append("<span>" + allInventory[3].FIELD2 + "</span>");
+                //start 4th auction, gather data from json files
+                $(".4-hx1").append("<span>" + allInventory[4].FIELD4 + " " + allInventory[4].FIELD5 + " " + allInventory[4].FIELD6 + "</span>");
+                $(".4-hx2").append("<span>" + (commaSeparateNumber(allInventory[4].FIELD53)) + "</span");
+                $(".4-mi-1").append("<span>" + allInventory[4].FIELD4 + " " + allInventory[4].FIELD5 + " " + allInventory[4].FIELD6 + "</span>");
+                $(".4-mi-cond").append("<span>" + allInventory[4].FIELD1 + "</span>");
+                $(".4-mi-2").append("<span>" + allInventory[4].FIELD7 + "</span>");
+                $(".4-mi-3").append("<span>" + allInventory[4].FIELD8 + "</span>");
+                $(".4-mi-4").append("<span>" + allInventory[4].FIELD11 + "</span>");
+                $(".4-mi-5").append("<span>" + allInventory[4].FIELD14 + "</span>");
+                $(".4-mi-6").append("<span>" + allInventory[4].FIELD15 + "</span>");
+                $(".4-mi-7").append("<span>" + (commaSeparateNumber(allInventory[4].FIELD18)) + "</span>");
+                $(".4-mi-8").append("<span> City: " + allInventory[4].FIELD49 + " / Hwy: " + allInventory[4].FIELD50 + "</span>");
+                $(".4-mi-9").append("<span>" + (allInventory[4].FIELD30.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3")) + "</span>");
+                $(".4-dealer-phone").wrap("<a href=tel:" + allInventory[4].FIELD30 + "></a>");
+                $(".4-mi-10").append("<span>" + allInventory[4].FIELD2 + "</span>");
+                //start 5th auction, gather data
+                $(".5-hx1").append("<span>" + allInventory[5].FIELD4 + " " + allInventory[5].FIELD5 + " " + allInventory[5].FIELD6 + "</span>");
+                $(".5-hx2").append("<span>" + (commaSeparateNumber(allInventory[5].FIELD53)) + "</span");
+                $(".5-mi-1").append("<span>" + allInventory[5].FIELD4 + " " + allInventory[5].FIELD5 + " " + allInventory[5].FIELD6 + "</span>");
+                $(".5-mi-cond").append("<span>" + allInventory[5].FIELD1 + "</span>");
+                $(".5-mi-2").append("<span>" + allInventory[5].FIELD7 + "</span>");
+                $(".5-mi-3").append("<span>" + allInventory[5].FIELD8 + "</span>");
+                $(".5-mi-4").append("<span>" + allInventory[5].FIELD11 + "</span>");
+                $(".5-mi-5").append("<span>" + allInventory[5].FIELD14 + "</span>");
+                $(".5-mi-6").append("<span>" + allInventory[5].FIELD15 + "</span>");
+                $(".5-mi-7").append("<span>" + (commaSeparateNumber(allInventory[5].FIELD18)) + "</span>");
+                $(".5-mi-8").append("<span> City: " + allInventory[5].FIELD49 + " / Hwy: " + allInventory[5].FIELD50 + "</span>");
+                $(".5-mi-9").append("<span>" + (allInventory[5].FIELD30.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3")) + "</span>");
+                $(".5-dealer-phone").wrap("<a href=tel:" + allInventory[5].FIELD30 + "></a>");
+                $(".5-mi-10").append("<span>" + allInventory[5].FIELD2 + "</span>");
+                //start 6th auction
+                $(".6-hx1").append("<span>" + allInventory[6].FIELD4 + " " + allInventory[6].FIELD5 + " " + allInventory[6].FIELD6 + "</span>");
+                $(".6-hx2").append("<span>" + (commaSeparateNumber(allInventory[6].FIELD53)) + "</span");
+                $(".6-mi-1").append("<span>" + allInventory[6].FIELD4 + " " + allInventory[6].FIELD5 + " " + allInventory[6].FIELD6 + "</span>");
+                $(".6-mi-cond").append("<span>" + allInventory[6].FIELD1 + "</span>");
+                $(".6-mi-2").append("<span>" + allInventory[6].FIELD7 + "</span>");
+                $(".6-mi-3").append("<span>" + allInventory[6].FIELD8 + "</span>");
+                $(".6-mi-4").append("<span>" + allInventory[6].FIELD11 + "</span>");
+                $(".6-mi-5").append("<span>" + allInventory[6].FIELD14 + "</span>");
+                $(".6-mi-6").append("<span>" + allInventory[6].FIELD15 + "</span>");
+                $(".6-mi-7").append("<span>" + (commaSeparateNumber(allInventory[6].FIELD18)) + "</span>");
+                $(".6-mi-8").append("<span> City: " + allInventory[6].FIELD49 + " / Hwy: " + allInventory[6].FIELD50 + "</span>");
+                $(".6-mi-9").append("<span>" + (allInventory[6].FIELD30.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3")) + "</span>");
+                $(".6-dealer-phone").wrap("<a href=tel:" + allInventory[6].FIELD30 + "></a>");
+                $(".6-mi-10").append("<span>" + allInventory[6].FIELD2 + "</span>");
+                //start 7th auction
+                $(".7-hx1").append("<span>" + allInventory[7].FIELD4 + " " + allInventory[7].FIELD5 + " " + allInventory[7].FIELD6 + "</span>");
+                $(".7-hx2").append("<span>" + (commaSeparateNumber(allInventory[7].FIELD53)) + "</span");
+                $(".7-mi-1").append("<span>" + allInventory[7].FIELD4 + " " + allInventory[7].FIELD5 + " " + allInventory[7].FIELD6 + "</span>");
+                $(".7-mi-cond").append("<span>" + allInventory[7].FIELD1 + "</span>");
+                $(".7-mi-2").append("<span>" + allInventory[7].FIELD7 + "</span>");
+                $(".7-mi-3").append("<span>" + allInventory[7].FIELD8 + "</span>");
+                $(".7-mi-4").append("<span>" + allInventory[7].FIELD11 + "</span>");
+                $(".7-mi-5").append("<span>" + allInventory[7].FIELD14 + "</span>");
+                $(".7-mi-6").append("<span>" + allInventory[7].FIELD15 + "</span>");
+                $(".7-mi-7").append("<span>" + (commaSeparateNumber(allInventory[7].FIELD18)) + "</span>");
+                $(".7-mi-8").append("<span> City: " + allInventory[7].FIELD49 + " / Hwy: " + allInventory[7].FIELD50 + "</span>");
+                $(".7-mi-9").append("<span>" + (allInventory[7].FIELD30.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3")) + "</span>");
+                $(".7-dealer-phone").wrap("<a href=tel:" + allInventory[7].FIELD30 + "></a>");
+                $(".7-mi-10").append("<span>" + allInventory[7].FIELD2 + "</span>");
+                // start 8th auction
+                $(".8-hx1").append("<span>" + allInventory[8].FIELD4 + " " + allInventory[8].FIELD5 + " " + allInventory[8].FIELD6 + "</span>");
+                $(".8-hx2").append("<span>" + (commaSeparateNumber(allInventory[8].FIELD53)) + "</span");
+                $(".8-mi-1").append("<span>" + allInventory[8].FIELD4 + " " + allInventory[8].FIELD5 + " " + allInventory[8].FIELD6 + "</span>");
+                $(".8-mi-cond").append("<span>" + allInventory[8].FIELD1 + "</span>");
+                $(".8-mi-2").append("<span>" + allInventory[8].FIELD7 + "</span>");
+                $(".8-mi-3").append("<span>" + allInventory[8].FIELD8 + "</span>");
+                $(".8-mi-4").append("<span>" + allInventory[8].FIELD11 + "</span>");
+                $(".8-mi-5").append("<span>" + allInventory[8].FIELD14 + "</span>");
+                $(".8-mi-6").append("<span>" + allInventory[8].FIELD15 + "</span>");
+                $(".8-mi-7").append("<span>" + (commaSeparateNumber(allInventory[8].FIELD18)) + "</span>");
+                $(".8-mi-8").append("<span> City: " + allInventory[8].FIELD49 + " / Hwy: " + allInventory[8].FIELD50 + "</span>");
+                $(".8-mi-9").append("<span>" + (allInventory[8].FIELD30.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3")) + "</span>");
+                $(".8-dealer-phone").wrap("<a href=tel:" + allInventory[8].FIELD30 + "></a>");
+                $(".8-mi-10").append("<span>" + allInventory[8].FIELD2 + "</span>");
             });
         });
     </script>
@@ -97,6 +187,96 @@
         $(document).ready(function auction4() {
             $(".2-close-window").click(function() {
                 $(".2-more-info").hide("slow");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function auction3() {
+            $(".3-hx1-info").click(function() {
+                $(".3-more-info").slideDown("slow");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function auction4() {
+            $(".3-close-window").click(function() {
+                $(".3-more-info").hide("slow");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function auction3() {
+            $(".4-hx1-info").click(function() {
+                $(".4-more-info").slideDown("slow");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function auction4() {
+            $(".4-close-window").click(function() {
+                $(".4-more-info").hide("slow");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function auction3() {
+            $(".5-hx1-info").click(function() {
+                $(".5-more-info").slideDown("slow");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function auction4() {
+            $(".5-close-window").click(function() {
+                $(".5-more-info").hide("slow");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function auction3() {
+            $(".6-hx1-info").click(function() {
+                $(".6-more-info").slideDown("slow");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function auction4() {
+            $(".6-close-window").click(function() {
+                $(".6-more-info").hide("slow");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function auction3() {
+            $(".7-hx1-info").click(function() {
+                $(".7-more-info").slideDown("slow");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function auction4() {
+            $(".7-close-window").click(function() {
+                $(".7-more-info").hide("slow");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function auction3() {
+            $(".8-hx1-info").click(function() {
+                $(".8-more-info").slideDown("slow");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function auction4() {
+            $(".8-close-window").click(function() {
+                $(".8-more-info").hide("slow");
             });
         });
     </script>
@@ -288,6 +468,74 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
             <!--end of bid column-->
 
             <!--end of column 2-->
+
+            <!--beginning of column 3-->
+
+            <div class="large-3 medium-4 small-6 columns">
+                <img src="./img/auction-image-2.png" alt="2016 Kia Sorento on My Auction Trader dot com website" title="myAuctionTrader.com 2016 Kia Sorento">
+                <div class="panel">
+                    <h5 class="3-hx1" style="text-align:center;"></h5>
+                    <h6 class="subheader">Last Bid: $<span class="3-hx2"></span>.00</h6>
+                    <a href="./member/login.html">
+                        <div class="small success button" style="text-align:center;width:100%;border-radius:4px;">
+                            <strong>Bid Now</strong>
+                        </div>
+                    </a>
+                    <h6 class="subheader">Reserve: <i class="fi-x" style="background-color:red;"></i> Not Met</h6>
+                    <h6 class="subheader">Your Bid: $--,---.00</h6>
+                    <h6 class="subheader" style="padding-bottom:5px;">Number of bids: <a href="./options/bid-history.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;">4</a></h6>
+                    <h6 class="subheader" style="text-align:center;background-color:#ff6666;border-radius:4px;">Auction Ends: <span id="3-timeRemaining"></span></h6>
+                    <h6 class="subheader" style="padding-top:10px;">Warranty available? <a href="./options/warranty-options.html"><mark>Yes</mark></a></h6>
+
+                  <div class="generic-hover-mi">
+                    <div class="3-hx1-info">
+                        <div class="panel radius callout" style="text-align: center">
+                            <span>more info</span>
+                        </div>
+                    </div>
+                  </div>
+
+                    <div class="3-more-info" style="padding-top:10px;border-top:1px solid #000;padding-top:5px;margin-top:15px;display:none;padding:10px;">
+
+                        <div style="text-align:center;padding-top:10px;"><span class="3-mi-1"></span>
+                        </div>
+                        <div style="padding-top:10px;">Condition: <span class="3-mi-cond"></span>
+                        </div>
+                        <div style="padding-top:10px;">Type: <span class="3-mi-2"></span>
+                        </div>
+                        <div style="padding-top:10px;">Trim: <span class="3-mi-3"></span>
+                        </div>
+                        <div style="padding-top:10px;">Color: <span class="3-mi-4"></span>
+                        </div>
+                        <div style="padding-top:10px;">Engine size: <span class="3-mi-5"></span>
+                        </div>
+                        <div style="padding-top:10px;">Transmission: <span class="3-mi-6"></span>
+                        </div>
+                        <div style="padding-top:10px;">MSRP: $<span class="3-mi-7"></span>
+                        </div>
+                        <div style="padding-top:10px;">MPG<span class="3-mi-8"></span>
+                        </div>
+                        <div style="padding-top:10px;">Dealer Phone #: <span class="3-dealer-phone"><span class="3-mi-9"></span></span>
+                        </div>
+                        <div style="padding-top:10px;padding-bottom:20px;">Auction ID: <span class="3-mi-10"></span>
+                        </div>
+
+                        <div class="share-button" style="border-radius:4px; margin:0 auto; background-color:lightgreen;padding-left:10px;padding-bottom:5px;"><a href="./options/social-media-share.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;"><i class="fi-share"></i><span> Share this auction</span></a>
+                        </div>
+                        <div class="bottom-border-box" style="padding-bottom:10px;border-bottom:1px solid #000;"></div>
+
+                      <div class="generic-hover-cw">
+                        <div class="3-close-window" style="text-align:right;">
+                            <mark><small>(less)</small>
+                            </mark>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end of more-info div-->
+                </div>
+            </div>
+
+            <!--end of auction block 3-->
 
         </div>
         <!--row-->
