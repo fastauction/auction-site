@@ -1,1 +1,1 @@
-console.log("testing this link");
+console.info("rss feed is on site");
