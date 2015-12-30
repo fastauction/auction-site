@@ -12,6 +12,7 @@ $(function(){
         console.info("Current Autoweek RSS feed: ",values);
         console.info(values[0].title);
         console.info(values[0].contentSnippet);
+        $(".rss-feed").append("<span>" + values[1].title + " --- " + values[1].contentSnippet + " --- " + values[2].title + "</span>");
     }
   });
 });
