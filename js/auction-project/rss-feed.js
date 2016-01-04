@@ -8,7 +8,7 @@ $(function(){
         console.alert('autoweek rss feed not loaded');
     },
     success: function(xml){
-        values = xml.responseData.feed.entries;
+        values = xml.responseData;
         console.info(xml.responseData);
         console.info("current autoweek rss feed: ",values);
         console.info(values[0].title);
