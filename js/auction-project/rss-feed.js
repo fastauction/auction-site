@@ -9,7 +9,9 @@ $(function(){
     },
     success: function(xml){
         values = xml.responseData.feed.entries;
-        console.info(xml.responseData);
+        fallback = xml.responseData;
+        console.info("rss values", xml.responseData.feed.entries);
+        console.info("rss fallback", xml.responseData);
         console.info("current autoweek rss feed: ",values);
         console.info(values[0].title);
         console.info(values[0].contentSnippet);
