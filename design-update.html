@@ -1,0 +1,741 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="NOINDEX, NOFOLLOW"><!--add no follow tag to keep out of front facing index and search engines-->
+    <meta name="description" content="web site for my Auction Trader featuring online auto auctions and more">
+    <meta name="keywords" content="Online Automotive Auctions">
+    <meta name="author" content="my Auction Trader inc a product of Auction Overdrive inc with Jeff Stansberry and Jim Smith">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my Auction Trader ©</title>
+    <link rel="icon" type="image/png" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/foundation.css"/>
+    <link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
+    <link rel="stylesheet" href="./css/auction.css"/>
+    <link rel="stylesheet" href="./css/rss.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./js/vendor/modernizr.js"></script>
+    <script src="./js/auction-project/pricecomma.js"></script>
+    <script src="./js/auction-project/infodrop.js"></script>
+    <script src="./js/auction-project/console.js"></script>
+    <script src="./js/auction-project/data-handler.js"></script>
+    <script src="./js/third-party-apps/scroll.js"></script>
+    <script src="./js/auction-project/rss-feed.js"></script>
+    <script src="./js/auction-project/rss-data.js"></script>
+    <script src="./js/auction-project/chat.js"></script>
+    <script src="./js/auction-project/page.js"></script>
+    <script src="./js/analytics/tracking.js"></script>
+</head>
+
+<body style="padding-top:10px;padding-bottom:30px;">
+
+    <div class="row">
+
+        <div class="large-4 columns">
+            <img src="http://placehold.it/600x100" alt="logo placeholder" title="placeholder for logo">
+            <!--./img/top-bar-logo.png-->
+            <h1>my Auction Trader</h1><h4>1-678-889-7776</h4>
+        </div>
+
+        <div class="large-8 columns">
+            <ul class="right">
+                <span><a href="http://www.facebook.com/myvipauctions"  style="display:inline-block;box-sizing:border-box;background-color:#fff"><img src="./img/facebook-icon.png" alt="like us on facebook" title="like us on facebook"></a>
+                    </span>
+                <span><a href="http://www.twitter.com/myvipauctions"  style="display:inline-block;box-sizing:border-box;background-color:#fff"><img src="./img/twitter-icon.png" alt="follow us on twitter" title="follow us on twitter"></a>
+                    </span>
+                <span><a href="http://www.youtube.com/user/AuctionOverdrive"  style="display:inline-block;box-sizing:border-box;background-color:#fff"><img src="./img/youtube-icon.png" alt="watch us on youtube" title="visit us on youtube"></a>
+                    </span>
+            </ul>
+        </div>
+        <hr>
+    </div>
+    <!--end of the header-->
+
+    <!--start of auction row-->
+    <div class="row">
+        <div class="large-12 columns">
+
+            <!--start of 1st block-->
+            <div class="large-3 medium-4 small-6 columns">
+                <img src="./img/auction-image-1.png" alt="2015 Kia Rio on My Auction Trader dot com website" title="myAuctionTrader.com 2015 Kia Rio">
+                <div class="panel">
+                    <h5 class="hx1" style="text-align:center;"></h5>
+                    <h6 class="subheader">Last Bid: $<span class="hx2"></span>.00</h6>
+                    <a href="./member/login.html">
+                        <div class="small success button" style="text-align:center;width:100%;border-radius:4px;">
+                            <strong>Bid Now</strong>
+                        </div>
+                    </a>
+                    <h6 class="subheader">Reserve: <i class="fi-check" style="background-color:#7cfc00;"></i> Met</h6>
+                    <h6 class="subheader">Your Bid: $--,---.00</h6>
+                    <h6 class="subheader" style="padding-bottom:5px;">Number of bids: <a href="./options/bid-history.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;">7</a></h6>
+                    <h6 class="subheader" style="text-align:center;background-color:#ff6666;border-radius:4px;">Auction Ends: <span id="timeRemaining"></span></h6>
+                    <h6 class="subheader" style="padding-top:10px;">Warranty available? <a href="./options/warranty-options.html"><mark>Yes</mark></a></h6>
+
+                  <div class="generic-hover-mi">
+                    <div class="hx1-info">
+                        <div class="panel radius callout" style="text-align: center">
+                            <span>more info</span>
+                        </div>
+                    </div>
+                  </div>
+
+                    <div class="more-info" style="padding-top:10px;border-top:1px solid #000;padding-top:5px;margin-top:15px;">
+
+                        <div style="text-align:center;padding-top:10px;"><span class="mi-1"></span>
+                        </div>
+                        <div style="padding-top:10px;">Condition: <span class="mi-cond"></span>
+                        </div>
+                        <div style="padding-top:10px;">Type: <span class="mi-2"></span>
+                        </div>
+                        <div style="padding-top:10px;">Trim: <span class="mi-3"></span>
+                        </div>
+                        <div style="padding-top:10px;">Color: <span class="mi-4"></span>
+                        </div>
+                        <div style="padding-top:10px;">Engine size: <span class="mi-5"></span>
+                        </div>
+                        <div style="padding-top:10px;">Transmission: <span class="mi-6"></span>
+                        </div>
+                        <div style="padding-top:10px;">MSRP: $<span class="mi-7"></span>
+                        </div>
+                        <div style="padding-top:10px;">MPG<span class="mi-8"></span>
+                        </div>
+                        <div style="padding-top:10px;">Dealer Phone #: <span class="dealer-phone"><span class="mi-9"></span></span>
+                        </div>
+                        <div style="padding-top:10px;padding-bottom:20px;">Auction ID: <span class="mi-10"></span>
+                        </div>
+
+                        <div class="share-button" style="border-radius:4px; margin:0 auto; background-color:lightgreen;padding-left:10px;padding-bottom:5px;"><a href="./options/social-media-share.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;"><i class="fi-share"></i><span> Share this auction</span></a>
+                        </div>
+                        <div class="bottom-border-box" style="padding-bottom:10px;border-bottom:1px solid #000;"></div>
+
+                      <div class="generic-hover-cw">
+                        <div class="close-window" style="text-align:right;">
+                            <mark><small>(less)</small>
+                            </mark>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end of more-info div-->
+                </div>
+            </div>
+            <!--end of bid column-->
+
+            <!--start of column 2-->
+
+            <div class="large-3 medium-4 small-6 columns">
+                <img src="./img/auction-image-2.png" alt="2016 Kia Sorento on My Auction Trader dot com website" title="myAuctionTrader.com 2016 Kia Sorento">
+                <div class="panel">
+                    <h5 class="2-hx1" style="text-align:center;"></h5>
+                    <h6 class="subheader">Last Bid: $<span class="2-hx2"></span>.00</h6>
+                    <a href="./member/login.html">
+                        <div class="small success button" style="text-align:center;width:100%;border-radius:4px;">
+                            <strong>Bid Now</strong>
+                        </div>
+                    </a>
+                    <h6 class="subheader">Reserve: <i class="fi-x" style="background-color:#FFB6C1;"></i> Not Met</h6>
+                    <h6 class="subheader">Your Bid: $--,---.00</h6>
+                    <h6 class="subheader" style="padding-bottom:5px;">Number of bids: <a href="./options/bid-history.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;">4</a></h6>
+                    <h6 class="subheader" style="text-align:center;background-color:#ff6666;border-radius:4px;">Auction Ends: <span id="2-timeRemaining"></span></h6>
+                    <h6 class="subheader" style="padding-top:10px;">Warranty available? <a href="./options/warranty-options.html"><mark>Yes</mark></a></h6>
+
+                  <div class="generic-hover-mi">
+                    <div class="2-hx1-info">
+                        <div class="panel radius callout" style="text-align: center">
+                            <span>more info</span>
+                        </div>
+                    </div>
+                  </div>
+
+                    <div class="2-more-info" style="padding-top:10px;border-top:1px solid #000;padding-top:5px;margin-top:15px;display:none;padding:10px;">
+
+                        <div style="text-align:center;padding-top:10px;"><span class="2-mi-1"></span>
+                        </div>
+                        <div style="padding-top:10px;">Condition: <span class="2-mi-cond"></span>
+                        </div>
+                        <div style="padding-top:10px;">Type: <span class="2-mi-2"></span>
+                        </div>
+                        <div style="padding-top:10px;">Trim: <span class="2-mi-3"></span>
+                        </div>
+                        <div style="padding-top:10px;">Color: <span class="2-mi-4"></span>
+                        </div>
+                        <div style="padding-top:10px;">Engine size: <span class="2-mi-5"></span>
+                        </div>
+                        <div style="padding-top:10px;">Transmission: <span class="2-mi-6"></span>
+                        </div>
+                        <div style="padding-top:10px;">MSRP: $<span class="2-mi-7"></span>
+                        </div>
+                        <div style="padding-top:10px;">MPG<span class="2-mi-8"></span>
+                        </div>
+                        <div style="padding-top:10px;">Dealer Phone #: <span class="2-dealer-phone"><span class="2-mi-9"></span></span>
+                        </div>
+                        <div style="padding-top:10px;padding-bottom:20px;">Auction ID: <span class="2-mi-10"></span>
+                        </div>
+
+                        <div class="share-button" style="border-radius:4px; margin:0 auto; background-color:lightgreen;padding-left:10px;padding-bottom:5px;"><a href="./options/social-media-share.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;"><i class="fi-share"></i><span> Share this auction</span></a>
+                        </div>
+                        <div class="bottom-border-box" style="padding-bottom:10px;border-bottom:1px solid #000;"></div>
+
+                      <div class="generic-hover-cw">
+                        <div class="2-close-window" style="text-align:right;">
+                            <mark><small>(less)</small>
+                            </mark>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end of more-info div-->
+                </div>
+            </div>
+
+            <!--end of column 2-->
+
+            <!--beginning of column 3-->
+
+            <div class="large-3 medium-4 small-6 columns">
+                <img src="./img/auction-image-3.png" alt="2016 Kia Sorento on My Auction Trader dot com website" title="myAuctionTrader.com 2016 Kia Sorento">
+                <div class="panel">
+                    <h5 class="3-hx1" style="text-align:center;"></h5>
+                    <h6 class="subheader">Last Bid: $<span class="3-hx2"></span>.00</h6>
+                    <a href="./member/login.html">
+                        <div class="small success button" style="text-align:center;width:100%;border-radius:4px;">
+                            <strong>Bid Now</strong>
+                        </div>
+                    </a>
+                    <h6 class="subheader">Reserve: <i class="fi-check" style="background-color:#7cfc00;"></i> Met</h6>
+                    <h6 class="subheader">Your Bid: $--,---.00</h6>
+                    <h6 class="subheader" style="padding-bottom:5px;">Number of bids: <a href="./options/bid-history.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;">30</a></h6>
+                    <h6 class="subheader" style="text-align:center;background-color:#ff6666;border-radius:4px;">Auction Ends: <span id="3-timeRemaining"></span></h6>
+                    <h6 class="subheader" style="padding-top:10px;">Warranty available? <a href="./options/warranty-options.html"><mark>Yes</mark></a></h6>
+
+                  <div class="generic-hover-mi">
+                    <div class="3-hx1-info">
+                        <div class="panel radius callout" style="text-align: center">
+                            <span>more info</span>
+                        </div>
+                    </div>
+                  </div>
+
+                    <div class="3-more-info" style="padding-top:10px;border-top:1px solid #000;padding-top:5px;margin-top:15px;display:none;padding:10px;">
+
+                        <div style="text-align:center;padding-top:10px;"><span class="3-mi-1"></span>
+                        </div>
+                        <div style="padding-top:10px;">Condition: <span class="3-mi-cond"></span>
+                        </div>
+                        <div style="padding-top:10px;">Type: <span class="3-mi-2"></span>
+                        </div>
+                        <div style="padding-top:10px;">Trim: <span class="3-mi-3"></span>
+                        </div>
+                        <div style="padding-top:10px;">Color: <span class="3-mi-4"></span>
+                        </div>
+                        <div style="padding-top:10px;">Engine size: <span class="3-mi-5"></span>
+                        </div>
+                        <div style="padding-top:10px;">Transmission: <span class="3-mi-6"></span>
+                        </div>
+                        <div style="padding-top:10px;">MSRP: $<span class="3-mi-7"></span>
+                        </div>
+                        <div style="padding-top:10px;">MPG<span class="3-mi-8"></span>
+                        </div>
+                        <div style="padding-top:10px;">Dealer Phone #: <span class="3-dealer-phone"><span class="3-mi-9"></span></span>
+                        </div>
+                        <div style="padding-top:10px;padding-bottom:20px;">Auction ID: <span class="3-mi-10"></span>
+                        </div>
+
+                        <div class="share-button" style="border-radius:4px; margin:0 auto; background-color:lightgreen;padding-left:10px;padding-bottom:5px;"><a href="./options/social-media-share.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;"><i class="fi-share"></i><span> Share this auction</span></a>
+                        </div>
+                        <div class="bottom-border-box" style="padding-bottom:10px;border-bottom:1px solid #000;"></div>
+
+                      <div class="generic-hover-cw">
+                        <div class="3-close-window" style="text-align:right;">
+                            <mark><small>(less)</small>
+                            </mark>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end of more-info div-->
+                </div>
+            </div>
+
+            <!--end of auction block 3-->
+
+            <!--start of auction block 4-->
+
+            <div class="large-3 medium-4 small-6 columns">
+                <img src="./img/auction-image-4.png" alt="2015 Kia Optima on My Auction Trader dot com website" title="myAuctionTrader.com 2015 Kia Optima">
+                <div class="panel">
+                    <h5 class="4-hx1" style="text-align:center;"></h5>
+                    <h6 class="subheader">Last Bid: $<span class="4-hx2"></span>.00</h6>
+                    <a href="./member/login.html">
+                        <div class="small success button" style="text-align:center;width:100%;border-radius:4px;">
+                            <strong>Bid Now</strong>
+                        </div>
+                    </a>
+                    <h6 class="subheader">Reserve: <i class="fi-x" style="background-color:#FFB6C1;"></i> Not Met</h6>
+                    <h6 class="subheader">Your Bid: $--,---.00</h6>
+                    <h6 class="subheader" style="padding-bottom:5px;">Number of bids: <a href="./options/bid-history.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;">11</a></h6>
+                    <h6 class="subheader" style="text-align:center;background-color:#ff6666;border-radius:4px;">Auction Ends: <span id="4-timeRemaining"></span></h6>
+                    <h6 class="subheader" style="padding-top:10px;">Warranty available? <a href="./options/warranty-options.html"><mark>Yes</mark></a></h6>
+
+                  <div class="generic-hover-mi">
+                    <div class="4-hx1-info">
+                        <div class="panel radius callout" style="text-align: center">
+                            <span>more info</span>
+                        </div>
+                    </div>
+                  </div>
+
+                    <div class="4-more-info" style="padding-top:10px;border-top:1px solid #000;padding-top:5px;margin-top:15px;display:none;padding:10px;">
+
+                        <div style="text-align:center;padding-top:10px;"><span class="4-mi-1"></span>
+                        </div>
+                        <div style="padding-top:10px;">Condition: <span class="4-mi-cond"></span>
+                        </div>
+                        <div style="padding-top:10px;">Type: <span class="4-mi-2"></span>
+                        </div>
+                        <div style="padding-top:10px;">Trim: <span class="4-mi-3"></span>
+                        </div>
+                        <div style="padding-top:10px;">Color: <span class="4-mi-4"></span>
+                        </div>
+                        <div style="padding-top:10px;">Engine size: <span class="4-mi-5"></span>
+                        </div>
+                        <div style="padding-top:10px;">Transmission: <span class="4-mi-6"></span>
+                        </div>
+                        <div style="padding-top:10px;">MSRP: $<span class="4-mi-7"></span>
+                        </div>
+                        <div style="padding-top:10px;">MPG<span class="4-mi-8"></span>
+                        </div>
+                        <div style="padding-top:10px;">Dealer Phone #: <span class="3-dealer-phone"><span class="4-mi-9"></span></span>
+                        </div>
+                        <div style="padding-top:10px;padding-bottom:20px;">Auction ID: <span class="4-mi-10"></span>
+                        </div>
+
+                        <div class="share-button" style="border-radius:4px; margin:0 auto; background-color:lightgreen;padding-left:10px;padding-bottom:5px;"><a href="./options/social-media-share.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;"><i class="fi-share"></i><span> Share this auction</span></a>
+                        </div>
+                        <div class="bottom-border-box" style="padding-bottom:10px;border-bottom:1px solid #000;"></div>
+
+                      <div class="generic-hover-cw">
+                        <div class="4-close-window" style="text-align:right;">
+                            <mark><small>(less)</small>
+                            </mark>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end of more-info div-->
+                </div>
+            </div>
+
+            <!--end of block 4-->
+
+            <!--start of block 5-->
+
+            <div class="large-3 medium-4 small-6 columns">
+                <img src="./img/auction-image-5.png" alt="2015 Kia Optima Hybrid on My Auction Trader dot com website" title="myAuctionTrader.com 2015 Kia Optima Hybrid">
+                <div class="panel">
+                    <h5 class="5-hx1" style="text-align:center;"></h5>
+                    <h6 class="subheader">Last Bid: $<span class="5-hx2"></span>.00</h6>
+                    <a href="./member/login.html">
+                        <div class="small success button" style="text-align:center;width:100%;border-radius:4px;">
+                            <strong>Bid Now</strong>
+                        </div>
+                    </a>
+                    <h6 class="subheader">Reserve: <i class="fi-check" style="background-color:#7cfc00;"></i> Met</h6>
+                    <h6 class="subheader">Your Bid: $--,---.00</h6>
+                    <h6 class="subheader" style="padding-bottom:5px;">Number of bids: <a href="./options/bid-history.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;">17</a></h6>
+                    <h6 class="subheader" style="text-align:center;background-color:#ff6666;border-radius:4px;">Auction Ends: <span id="5-timeRemaining"></span></h6>
+                    <h6 class="subheader" style="padding-top:10px;">Warranty available? <a href="./options/warranty-options.html"><mark>Yes</mark></a></h6>
+
+                  <div class="generic-hover-mi">
+                    <div class="5-hx1-info">
+                        <div class="panel radius callout" style="text-align: center">
+                            <span>more info</span>
+                        </div>
+                    </div>
+                  </div>
+
+                    <div class="5-more-info" style="padding-top:10px;border-top:1px solid #000;padding-top:5px;margin-top:15px;display:none;padding:10px;">
+
+                        <div style="text-align:center;padding-top:10px;"><span class="5-mi-1"></span>
+                        </div>
+                        <div style="padding-top:10px;">Condition: <span class="5-mi-cond"></span>
+                        </div>
+                        <div style="padding-top:10px;">Type: <span class="5-mi-2"></span>
+                        </div>
+                        <div style="padding-top:10px;">Trim: <span class="5-mi-3"></span>
+                        </div>
+                        <div style="padding-top:10px;">Color: <span class="5-mi-4"></span>
+                        </div>
+                        <div style="padding-top:10px;">Engine size: <span class="5-mi-5"></span>
+                        </div>
+                        <div style="padding-top:10px;">Transmission: <span class="5-mi-6"></span>
+                        </div>
+                        <div style="padding-top:10px;">MSRP: $<span class="5-mi-7"></span>
+                        </div>
+                        <div style="padding-top:10px;">MPG<span class="5-mi-8"></span>
+                        </div>
+                        <div style="padding-top:10px;">Dealer Phone #: <span class="3-dealer-phone"><span class="5-mi-9"></span></span>
+                        </div>
+                        <div style="padding-top:10px;padding-bottom:20px;">Auction ID: <span class="5-mi-10"></span>
+                        </div>
+
+                        <div class="share-button" style="border-radius:4px; margin:0 auto; background-color:lightgreen;padding-left:10px;padding-bottom:5px;"><a href="./options/social-media-share.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;"><i class="fi-share"></i><span> Share this auction</span></a>
+                        </div>
+                        <div class="bottom-border-box" style="padding-bottom:10px;border-bottom:1px solid #000;"></div>
+
+                      <div class="generic-hover-cw">
+                        <div class="5-close-window" style="text-align:right;">
+                            <mark><small>(less)</small>
+                            </mark>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end of more-info div-->
+                </div>
+            </div>
+
+            <!--end of block 5-->
+
+            <!--start of block 6-->
+
+            <div class="large-3 medium-4 small-6 columns">
+                <img src="./img/auction-image-6.png" alt="2016 Kia Sorento on My Auction Trader dot com website" title="myAuctionTrader.com 2016 Kia Sorento">
+                <div class="panel">
+                    <h5 class="6-hx1" style="text-align:center;"></h5>
+                    <h6 class="subheader">Last Bid: $<span class="6-hx2"></span>.00</h6>
+                    <a href="./member/login.html">
+                        <div class="small success button" style="text-align:center;width:100%;border-radius:4px;">
+                            <strong>Bid Now</strong>
+                        </div>
+                    </a>
+                    <h6 class="subheader">Reserve: <i class="fi-x" style="background-color:#FFB6C1;"></i> Not Met</h6>
+                    <h6 class="subheader">Your Bid: $--,---.00</h6>
+                    <h6 class="subheader" style="padding-bottom:5px;">Number of bids: <a href="./options/bid-history.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;">26</a></h6>
+                    <h6 class="subheader" style="text-align:center;background-color:#ff6666;border-radius:4px;">Auction Ends: <span id="6-timeRemaining"></span></h6>
+                    <h6 class="subheader" style="padding-top:10px;">Warranty available? <a href="./options/warranty-options.html"><mark>Yes</mark></a></h6>
+
+                  <div class="generic-hover-mi">
+                    <div class="6-hx1-info">
+                        <div class="panel radius callout" style="text-align: center">
+                            <span>more info</span>
+                        </div>
+                    </div>
+                  </div>
+
+                    <div class="6-more-info" style="padding-top:10px;border-top:1px solid #000;padding-top:5px;margin-top:15px;display:none;padding:10px;">
+
+                        <div style="text-align:center;padding-top:10px;"><span class="6-mi-1"></span>
+                        </div>
+                        <div style="padding-top:10px;">Condition: <span class="6-mi-cond"></span>
+                        </div>
+                        <div style="padding-top:10px;">Type: <span class="6-mi-2"></span>
+                        </div>
+                        <div style="padding-top:10px;">Trim: <span class="6-mi-3"></span>
+                        </div>
+                        <div style="padding-top:10px;">Color: <span class="6-mi-4"></span>
+                        </div>
+                        <div style="padding-top:10px;">Engine size: <span class="6-mi-5"></span>
+                        </div>
+                        <div style="padding-top:10px;">Transmission: <span class="6-mi-6"></span>
+                        </div>
+                        <div style="padding-top:10px;">MSRP: $<span class="6-mi-7"></span>
+                        </div>
+                        <div style="padding-top:10px;">MPG<span class="6-mi-8"></span>
+                        </div>
+                        <div style="padding-top:10px;">Dealer Phone #: <span class="6-dealer-phone"><span class="6-mi-9"></span></span>
+                        </div>
+                        <div style="padding-top:10px;padding-bottom:20px;">Auction ID: <span class="6-mi-10"></span>
+                        </div>
+
+                        <div class="share-button" style="border-radius:4px; margin:0 auto; background-color:lightgreen;padding-left:10px;padding-bottom:5px;"><a href="./options/social-media-share.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;"><i class="fi-share"></i><span> Share this auction</span></a>
+                        </div>
+                        <div class="bottom-border-box" style="padding-bottom:10px;border-bottom:1px solid #000;"></div>
+
+                      <div class="generic-hover-cw">
+                        <div class="6-close-window" style="text-align:right;">
+                            <mark><small>(less)</small>
+                            </mark>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end of more-info div-->
+                </div>
+            </div>
+
+            <!--end of block 6-->
+
+            <!--start of block 7-->
+
+            <div class="large-3 medium-4 small-6 columns">
+                <img src="./img/auction-image-7.png" alt="2015 Kia Optima Hybrid on My Auction Trader dot com website" title="myAuctionTrader.com 2015 Kia Optima Hybrid">
+                <div class="panel">
+                    <h5 class="7-hx1" style="text-align:center;"></h5>
+                    <h6 class="subheader">Last Bid: $<span class="7-hx2"></span>.00</h6>
+                    <a href="./member/login.html">
+                        <div class="small success button" style="text-align:center;width:100%;border-radius:4px;">
+                            <strong>Bid Now</strong>
+                        </div>
+                    </a>
+                    <h6 class="subheader">Reserve: <i class="fi-x" style="background-color:#FFB6C1;"></i> Not Met</h6>
+                    <h6 class="subheader">Your Bid: $--,---.00</h6>
+                    <h6 class="subheader" style="padding-bottom:5px;">Number of bids: <a href="./options/bid-history.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;">1</a></h6>
+                    <h6 class="subheader" style="text-align:center;background-color:#ff6666;border-radius:4px;">Auction Ends: <span id="7-timeRemaining"></span></h6>
+                    <h6 class="subheader" style="padding-top:10px;">Warranty available? <a href="./options/warranty-options.html"><mark>Yes</mark></a></h6>
+
+                  <div class="generic-hover-mi">
+                    <div class="7-hx1-info">
+                        <div class="panel radius callout" style="text-align: center">
+                            <span>more info</span>
+                        </div>
+                    </div>
+                  </div>
+
+                    <div class="7-more-info" style="padding-top:10px;border-top:1px solid #000;padding-top:5px;margin-top:15px;display:none;padding:10px;">
+
+                        <div style="text-align:center;padding-top:10px;"><span class="7-mi-1"></span>
+                        </div>
+                        <div style="padding-top:10px;">Condition: <span class="7-mi-cond"></span>
+                        </div>
+                        <div style="padding-top:10px;">Type: <span class="7-mi-2"></span>
+                        </div>
+                        <div style="padding-top:10px;">Trim: <span class="7-mi-3"></span>
+                        </div>
+                        <div style="padding-top:10px;">Color: <span class="7-mi-4"></span>
+                        </div>
+                        <div style="padding-top:10px;">Engine size: <span class="7-mi-5"></span>
+                        </div>
+                        <div style="padding-top:10px;">Transmission: <span class="7-mi-6"></span>
+                        </div>
+                        <div style="padding-top:10px;">MSRP: $<span class="7-mi-7"></span>
+                        </div>
+                        <div style="padding-top:10px;">MPG<span class="7-mi-8"></span>
+                        </div>
+                        <div style="padding-top:10px;">Dealer Phone #: <span class="7-dealer-phone"><span class="7-mi-9"></span></span>
+                        </div>
+                        <div style="padding-top:10px;padding-bottom:20px;">Auction ID: <span class="7-mi-10"></span>
+                        </div>
+
+                        <div class="share-button" style="border-radius:4px; margin:0 auto; background-color:lightgreen;padding-left:10px;padding-bottom:5px;"><a href="./options/social-media-share.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;"><i class="fi-share"></i><span> Share this auction</span></a>
+                        </div>
+                        <div class="bottom-border-box" style="padding-bottom:10px;border-bottom:1px solid #000;"></div>
+
+                      <div class="generic-hover-cw">
+                        <div class="7-close-window" style="text-align:right;">
+                            <mark><small>(less)</small>
+                            </mark>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end of more-info div-->
+                </div>
+            </div>
+
+            <!--end of block 7-->
+
+            <!--start of block 8-->
+
+            <div class="large-3 medium-4 small-6 columns">
+                <img src="./img/auction-image-8.png" alt="2015 Kia Sedona on My Auction Trader dot com website" title="myAuctionTrader.com 2015 Kia Sedona">
+                <div class="panel">
+                    <h5 class="8-hx1" style="text-align:center;"></h5>
+                    <h6 class="subheader">Last Bid: $<span class="8-hx2"></span>.00</h6>
+                    <a href="./member/login.html">
+                        <div class="small success button" style="text-align:center;width:100%;border-radius:4px;">
+                            <strong>Bid Now</strong>
+                        </div>
+                    </a>
+                    <h6 class="subheader">Reserve: <i class="fi-check" style="background-color:#7cfc00;"></i> Met</h6>
+                    <h6 class="subheader">Your Bid: $--,---.00</h6>
+                    <h6 class="subheader" style="padding-bottom:5px;">Number of bids: <a href="./options/bid-history.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;">20</a></h6>
+                    <h6 class="subheader" style="text-align:center;background-color:#ff6666;border-radius:4px;">Auction Ends: <span id="8-timeRemaining"></span></h6>
+                    <h6 class="subheader" style="padding-top:10px;">Warranty available? <a href="./options/warranty-options.html"><mark>Yes</mark></a></h6>
+
+                  <div class="generic-hover-mi">
+                    <div class="8-hx1-info">
+                        <div class="panel radius callout" style="text-align: center">
+                            <span>more info</span>
+                        </div>
+                    </div>
+                  </div>
+
+                    <div class="8-more-info" style="padding-top:10px;border-top:1px solid #000;padding-top:5px;margin-top:15px;display:none;padding:10px;">
+
+                        <div style="text-align:center;padding-top:10px;"><span class="8-mi-1"></span>
+                        </div>
+                        <div style="padding-top:10px;">Condition: <span class="8-mi-cond"></span>
+                        </div>
+                        <div style="padding-top:10px;">Type: <span class="8-mi-2"></span>
+                        </div>
+                        <div style="padding-top:10px;">Trim: <span class="8-mi-3"></span>
+                        </div>
+                        <div style="padding-top:10px;">Color: <span class="8-mi-4"></span>
+                        </div>
+                        <div style="padding-top:10px;">Engine size: <span class="8-mi-5"></span>
+                        </div>
+                        <div style="padding-top:10px;">Transmission: <span class="8-mi-6"></span>
+                        </div>
+                        <div style="padding-top:10px;">MSRP: $<span class="8-mi-7"></span>
+                        </div>
+                        <div style="padding-top:10px;">MPG<span class="8-mi-8"></span>
+                        </div>
+                        <div style="padding-top:10px;">Dealer Phone #: <span class="8-dealer-phone"><span class="8-mi-9"></span></span>
+                        </div>
+                        <div style="padding-top:10px;padding-bottom:20px;">Auction ID: <span class="8-mi-10"></span>
+                        </div>
+
+                        <div class="share-button" style="border-radius:4px; margin:0 auto; background-color:lightgreen;padding-left:10px;padding-bottom:5px;"><a href="./options/social-media-share.html" onclick="window.open(this.href,'targetWindow','width=400,height=400','addressbar=no');return false;"><i class="fi-share"></i><span> Share this auction</span></a>
+                        </div>
+                        <div class="bottom-border-box" style="padding-bottom:10px;border-bottom:1px solid #000;"></div>
+
+                      <div class="generic-hover-cw">
+                        <div class="8-close-window" style="text-align:right;">
+                            <mark><small>(less)</small>
+                            </mark>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end of more-info div-->
+                </div>
+            </div>
+
+            <!--end of block 8-->
+
+        </div>
+        <!--row-->
+    </div>
+    <!--column-->
+
+    <!--end of auction row-->
+
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="row">
+                <div class="large-8 columns">
+                    <div class="panel radius">
+                        <div class="row">
+                            <div class="large-6 small-6 columns">
+                                <h4>About my Auction Trader</h4>
+                                <hr>
+                                <h5 class="subheader">Jim Smith and Jeff Stansberry have over 45 years of auction experience. From automobiles, commercial real estate, residential and development property to farms and ranches, heavy equipment and farm machinery.</h5>
+                                  <span style="padding:20px;"><img src="./img/on-the-air.png" alt="Auction Overdrive is live on the air" title="Jeff Stansberry and Jim Smith live on the air"></span>
+                                <div class="show-for-small" style="text-align: center">
+                                    <a class="small radius button" href="./member/login.html">Register to bid</a>
+                                    <br>
+                                    <a class="small radius button" href="./member/login.html">my Account</a>
+                                </div>
+                            </div>
+                            <div class="large-6 small-6 columns">
+                                <p>Auctioning specialty assets such as classic cars, some of the finest purebred livestock in the world, and the most prime of estates, Smith and Stansberry combined have auctioned assets totaling in the BILLIONS of dollars. They formed AUCTION OVERDRIVE to offer one of the most diverse and experienced teams in the global industry of auctions. Companies such as Manheim, Adesa, Ford, General Motors, Nissan, BMW, Barrett Jackson, Auction.com, and Keeneland have utilized their talents and services to increase sales and profits to their heavy hitter list of clients. Now these services are available to you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="large-4 columns hide-for-small">
+                    <h4>Are you a member?</h4>
+                    <hr>
+                    <a href="./member/login.html">
+                        <div class="panel radius callout" style="text-align: center">
+                            <strong>Register to bid</strong>
+                        </div>
+                    </a>
+                    <a href="./member/login.html">
+                        <div class="panel radius callout" style="text-align: center">
+                            <strong>my Account</strong>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <div id="scroller_container">
+          <!--rss feed-->
+        <div class="jscroller2_left jscroller2_speed-50" style="font-family:Raleway; font-size:20px; line-height:20px; white-space:nowrap; margin: 0;"><span class="rss-feed"></span> </div>
+    </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+         <marquee><div style="font-family:Arial,Raleway; font-size:20px; line-height:20px; white-space:nowrap; margin: 0;"><span class="rss-feed"></span></div></marquee>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <div id="scroller_container">
+          <!--rss feed-->
+        <div class="jscroller2_left jscroller2_speed-50" style="font-family:Raleway; font-size:20px; line-height:20px; white-space:nowrap; margin: 0;"><span class="rss-redundant"></span> </div>
+    </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+         <marquee><div style="font-family:Arial,Raleway; font-size:20px; line-height:20px; white-space:nowrap; margin: 0;"><span class="rss-redundant"></span></div></marquee>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+         <marquee direction="right"><div style="font-family:Arial,Raleway; font-size:20px; line-height:20px; white-space:nowrap; margin: 0;"><span class="rss-redundant"></span></div></marquee>
+      </div>
+    </div>
+
+    <footer class="row">
+        <div class="large-12 columns">
+            <hr>
+            <div class="row">
+                <div class="large-6 columns">
+                    <ul class="ul-list left">
+                        <div>
+                            <a style="color:#000;" href="./pages/registration-faqs.html">Registration and Log-In FAQ's</a>
+                        </div>
+                        <div>
+                            <a style="color:#000;" href="./pages/wholesale-auctions.html">Wholesale Dealer Auctions</a>
+                        </div>
+                        <div>
+                            <a style="color:#000;" href="./pages/public-auctions.html">Public Auctions</a>
+                        </div>
+                        <div>
+                            <a style="color:#000;" href="./pages/auction-schedule.html">Upcoming Auctions</a>
+                        </div>
+                    </ul>
+
+                    <ul class="ul-list right">
+                        <div>
+                            <a style="color:#000;" href="./pages/success-stories.html">Success Stories</a>
+                        </div>
+                        <div>
+                            <a style="color:#000;" href="./pages/our-story.html">Our Story</a>
+                        </div>
+                        <div>
+                            <a style="color:#000;" href="./pages/company-info-policies.html">Company Info &amp; Policies</a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="large-12 columns" style="padding-top:40px;padding-bottom:40px;">
+                    <p style="text-align:center;">2010-
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script> &copy; <a href="http://www.beta-myauctiontrader.com">my Auction Trader</a>, an <img style="vertical-align:middle;padding-bottom:20px;" src="./img/auction-overdrive-logo.png" alt="my Auction Trader is an Auction Overdrive company" title="my Auction Trader is an Auction Overdrive company" /> product. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/vendor/jquery.js"></script>
+    <script src="./js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+
+    <script src="./js/auction-project/auctiontimer.js"></script>
+
+</body>
+</html>
